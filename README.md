@@ -1,7 +1,7 @@
-# Build4Ireland MCP (local Dublin bus demo)
+# Build4Ireland MCP (local NTA public transport demo)
 
-This first MCP server searches Dublin bus stops and returns timetable departures
-from the local NTA GTFS database. Until the realtime poller is running, results
+This MCP server searches stops and returns timetable departures for bus, Irish Rail,
+and Luas services in the locally loaded national NTA GTFS database. Until the realtime poller is running, results
 are marked `scheduled-only` and the realtime state is `not_connected`. A timetable
 entry is not evidence that a bus is currently running.
 
@@ -32,14 +32,19 @@ can be changed with `TRANSPORT_DB_PATH`.
 
 ## Tools
 
-- `find_stops(query, limit=8)`: fuzzy-searches stops served by Dublin Bus,
-  Go-Ahead Ireland, or Nitelink and returns the GTFS stop IDs.
-- `get_departures(stop_id, route_id=null, limit=10, window_minutes=120)`: returns
-  upcoming Dublin bus timetable entries, status, source freshness, and feed
-  import time. It supports overnight GTFS service times.
+- `find_stops(query, limit=8, mode=null)`: fuzzy-searches supported NTA stops;
+  optional mode is `bus`, `rail`, or `tram` (`Luas`). Results include operators.
+- `get_departures(stop_id, route_id=null, limit=10, window_minutes=120,
+  mode=null, operator=null)`: returns upcoming national bus, rail, or tram
+  timetable entries, optionally filtered by mode/operator, with realtime status
+  and source freshness. It supports overnight GTFS service times.
 
-Example sequence: call `find_stops("Donnybrook")`, choose a returned `stop_id`,
-then pass it to `get_departures`.
+Example sequence: call `find_stops("Heuston", mode="rail")`, choose a returned
+`stop_id`, then pass it to `get_departures(mode="rail")`. Omit `mode` to search
+all supported modes at a stop. Other bus operators in the national timetable
+are included and may be scheduled-only when no matching realtime observation is
+available. Modes without NTA GTFS routes, such as Dublin Bikes, require a separate
+source integration.
 
 ## Connect ChatGPT
 

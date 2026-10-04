@@ -1,5 +1,18 @@
 # Poller → MCP handoff
 
+## MCP mode coverage
+
+The MCP searches the full loaded national NTA timetable for GTFS route types
+0 (tram/Luas), 2 (rail/Irish Rail), and 3 (bus, including Bus Éireann and
+other loaded operators). Use `find_stops(query, mode="rail")` or
+`find_stops(query, mode="tram")` to narrow a stop search. Then pass the returned
+GTFS stop ID to `get_departures`, optionally setting `mode` and an exact
+`operator` name returned by the stop search. Omit `mode` to include all three
+types. This changes the MCP query scope; it does not add feeds beyond the
+national NTA static GTFS and the configured NTA realtime sources. A departure
+is live only when a fresh matching observation exists. Other services such as
+Dublin Bikes require a separate data source.
+
 Use `db.connect()` and the same `TRANSPORT_DB_PATH` (default
 `data/transport.sqlite3`). The poller writes realtime tables; the loader writes
 static tables. No schema changes were needed for this handoff.

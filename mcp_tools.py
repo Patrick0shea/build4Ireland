@@ -14,11 +14,23 @@ import db
 
 
 DUBLIN_TZ = ZoneInfo("Europe/Dublin")
-DUBLIN_BUS_AGENCIES_SQL = """(
-    lower(coalesce(a.agency_name, '')) LIKE '%dublin bus%'
-    OR lower(coalesce(a.agency_name, '')) LIKE '%go-ahead ireland%'
-    OR lower(coalesce(a.agency_name, '')) LIKE '%nitelink%'
-)"""
+MODE_ROUTE_TYPES = {"tram": (0,), "rail": (2,), "bus": (3,)}
+MODE_ALIASES = {"luas": "tram", "train": "rail", "irish rail": "rail", "trains": "rail", "buses": "bus"}
+SUPPORTED_ROUTE_TYPES = tuple(sorted({value for values in MODE_ROUTE_TYPES.values() for value in values}))
+
+
+def _mode_name(route_type: int) -> str:
+    return {0: "tram", 2: "rail", 3: "bus"}.get(route_type, "other")
+
+
+def _selected_route_types(mode: str | None) -> tuple[int, ...]:
+    if mode is None or not mode.strip():
+        return SUPPORTED_ROUTE_TYPES
+    normalised = " ".join(mode.lower().split())
+    normalised = MODE_ALIASES.get(normalised, normalised)
+    if normalised not in MODE_ROUTE_TYPES:
+        raise ValueError("mode must be bus, rail, or tram (Luas)")
+    return MODE_ROUTE_TYPES[normalised]
 
 
 def _metadata(connection) -> dict[str, str]:
@@ -123,12 +135,16 @@ def _realtime_state(connection, now_utc: datetime) -> tuple[dict[str, Any], int 
     return result, usable_snapshot_id
 
 
-def find_stops(query: str, limit: int = 8) -> dict[str, Any]:
-    """Fuzzy-search Dublin bus stops and return their stable GTFS stop IDs."""
+def find_stops(query: str, limit: int = 8, mode: str | None = None) -> dict[str, Any]:
+    """Fuzzy-search stops served by supported NTA bus, rail, and tram routes."""
     query = " ".join(query.split())
     if len(query) < 2:
         return {"query": query, "stops": [], "message": "Enter at least two characters."}
     limit = max(1, min(int(limit), 15))
+    try:
+        route_types = _selected_route_types(mode)
+    except ValueError as error:
+        return {"query": query, "stops": [], "message": str(error)}
     now_utc = datetime.now(timezone.utc)
 
     with closing(db.connect()) as connection:
@@ -149,15 +165,16 @@ def find_stops(query: str, limit: int = 8) -> dict[str, Any]:
         stops = []
         for _name, score, stop_id in matches:
             row = rows_by_id[stop_id]
+            type_placeholders = ",".join("?" for _ in route_types)
             service = connection.execute(
-                f"""SELECT DISTINCT r.route_short_name, r.route_long_name, a.agency_name
+                f"""SELECT DISTINCT r.route_short_name, r.route_long_name, r.route_type, a.agency_name
                     FROM stop_times st
                     JOIN trips t ON t.trip_id=st.trip_id
                     JOIN routes r ON r.route_id=t.route_id
                     LEFT JOIN agencies a ON a.agency_id=r.agency_id
-                    WHERE st.stop_id=? AND r.route_type=3 AND {DUBLIN_BUS_AGENCIES_SQL}
-                    ORDER BY r.route_short_name LIMIT 12""",
-                (stop_id,),
+                    WHERE st.stop_id=? AND r.route_type IN ({type_placeholders})
+                    ORDER BY r.route_type, r.route_short_name LIMIT 20""",
+                (stop_id, *route_types),
             ).fetchall()
             if not service:
                 continue
@@ -168,7 +185,8 @@ def find_stops(query: str, limit: int = 8) -> dict[str, Any]:
                 "longitude": row["stop_lon"],
                 "match_score": round(float(score), 1),
                 "served_by": [
-                    {"route": item["route_short_name"], "route_name": item["route_long_name"], "operator": item["agency_name"]}
+                    {"route": item["route_short_name"], "route_name": item["route_long_name"],
+                     "operator": item["agency_name"], "mode": _mode_name(item["route_type"])}
                     for item in service
                 ],
             })
@@ -180,8 +198,8 @@ def find_stops(query: str, limit: int = 8) -> dict[str, Any]:
         "as_of": _iso_utc(now_utc),
         "source": "NTA static GTFS",
         "static_feed_imported_at_utc": metadata.get("gtfs_imported_at_utc"),
-        "coverage": "Dublin bus operators in the loaded NTA timetable (Dublin Bus, Go-Ahead Ireland, and Nitelink)",
-        "message": None if stops else "No matching Dublin bus stops were found in the loaded timetable.",
+        "coverage": "Stops served by bus, Irish Rail, or Luas routes in the loaded national NTA timetable.",
+        "message": None if stops else "No matching supported public transport stops were found in the loaded timetable.",
     }
 
 
@@ -190,16 +208,23 @@ def get_departures(
     route_id: str | None = None,
     limit: int = 10,
     window_minutes: int = 120,
+    mode: str | None = None,
+    operator: str | None = None,
 ) -> dict[str, Any]:
-    """Return upcoming Dublin bus departures with explicit timetable/realtime status."""
+    """Return upcoming national NTA bus, rail, or tram departures and evidence status."""
     limit = max(1, min(int(limit), 25))
     window_minutes = max(15, min(int(window_minutes), 24 * 60))
+    try:
+        route_types = _selected_route_types(mode)
+    except ValueError as error:
+        return {"stop_id": stop_id, "departures": [], "message": str(error)}
     now_utc = datetime.now(timezone.utc)
     now_local = now_utc.astimezone(DUBLIN_TZ)
     end_utc = now_utc + timedelta(minutes=window_minutes)
     candidates: list[dict[str, Any]] = []
 
     with closing(db.connect()) as connection:
+        connection.create_function("unicode_casefold", 1, lambda value: value.casefold() if value else "")
         stop = connection.execute(
             "SELECT stop_id, stop_name, stop_lat, stop_lon FROM stops WHERE stop_id=?", (stop_id,)
         ).fetchone()
@@ -228,14 +253,20 @@ def get_departures(
             if not service_ids:
                 continue
             placeholders = ",".join("?" for _ in service_ids)
-            filters = [f"t.service_id IN ({placeholders})", "st.stop_id=?", "st.departure_secs BETWEEN ? AND ?", "r.route_type=3", DUBLIN_BUS_AGENCIES_SQL]
+            type_placeholders = ",".join("?" for _ in route_types)
+            filters = [f"t.service_id IN ({placeholders})", "st.stop_id=?",
+                       "st.departure_secs BETWEEN ? AND ?", f"r.route_type IN ({type_placeholders})"]
             params: list[Any] = list(sorted(service_ids)) + [stop_id, lower_secs, upper_secs]
+            params.extend(route_types)
             if route_id:
                 filters.append("r.route_id=?")
                 params.append(route_id)
+            if operator:
+                filters.append("unicode_casefold(a.agency_name)=unicode_casefold(?)")
+                params.append(operator.strip())
             rows = connection.execute(
                 f"""SELECT st.trip_id, st.departure_secs, t.service_id, t.trip_headsign,
-                           r.route_id, r.route_short_name, r.route_long_name, a.agency_name
+                           r.route_id, r.route_short_name, r.route_long_name, r.route_type, a.agency_name
                     FROM stop_times st
                     JOIN trips t ON t.trip_id=st.trip_id
                     JOIN routes r ON r.route_id=t.route_id
@@ -249,6 +280,7 @@ def get_departures(
                 candidates.append({
                     "stop_id": stop_id,
                     "route_id": row["route_id"],
+                    "mode": _mode_name(row["route_type"]),
                     "route": row["route_short_name"],
                     "route_name": row["route_long_name"],
                     "operator": row["agency_name"],
@@ -305,6 +337,6 @@ def get_departures(
         "source": "NTA static GTFS",
         "static_feed_imported_at_utc": metadata.get("gtfs_imported_at_utc"),
         "realtime": realtime,
-        "coverage": "Dublin bus operators in the loaded NTA timetable; other modes and operators are not included in this tool yet.",
-        "message": None if departures else f"No scheduled Dublin bus departures were found within {window_minutes} minutes.",
+        "coverage": "Bus, rail, and tram (Luas) routes in the loaded national NTA timetable. Realtime status is available only when a fresh matching feed observation exists; unsupported modes and feeds are reported as scheduled-only.",
+        "message": None if departures else f"No scheduled departures were found within {window_minutes} minutes for this stop and filter.",
     }

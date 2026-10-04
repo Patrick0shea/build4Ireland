@@ -15,7 +15,7 @@ mcp = FastMCP(
     "Honest Live Transport Ireland",
     instructions=(
         "Answer transport questions only from tool results. These tools currently "
-        "cover Dublin bus timetable data. Always state whether realtime data is "
+        "cover supported NTA bus, Irish Rail, and Luas timetable data. Always state whether realtime data is "
         "fresh, stale, unavailable, or not connected. 'scheduled-only' means the "
         "timetable lists a trip but the current realtime feed did not provide a "
         "matching observation; it does not mean the bus is cancelled or will not run. "
@@ -25,24 +25,27 @@ mcp = FastMCP(
 
 
 @mcp.tool(description=(
-    "Find Dublin bus stops by fuzzy name. Use this first when the user gives a "
+    "Find NTA public transport stops by fuzzy name across bus, Irish Rail, and Luas. Use this first when the user gives a "
     "place or stop name instead of a GTFS stop ID. Returns stable stop IDs, "
-    "coordinates, match scores, and example serving routes."
+    "coordinates, match scores, modes, and example serving operators/routes. "
+    "Optionally filter mode to bus, rail, or tram (Luas)."
 ))
-def find_stops(query: str, limit: int = 8) -> dict:
-    return find_stops_tool(query, limit)
+def find_stops(query: str, limit: int = 8, mode: str | None = None) -> dict:
+    return find_stops_tool(query, limit, mode)
 
 
 @mcp.tool(description=(
-    "Get upcoming scheduled Dublin bus departures for a GTFS stop ID, optionally "
-    "filtered by route. Report each status honestly: live only when there is a "
+    "Get upcoming scheduled NTA bus, Irish Rail, or Luas departures for a GTFS stop ID, "
+    "optionally filtered by route, mode, or exact operator name. Report each status honestly: live only when there is a "
     "fresh matching realtime observation; cancelled only on explicit cancellation; "
     "otherwise scheduled-only. Check the returned realtime state and timetable "
     "import timestamp before answering. A missing feed observation does not prove "
     "a bus will not run."
 ))
-def get_departures(stop_id: str, route_id: str | None = None, limit: int = 10, window_minutes: int = 120) -> dict:
-    return get_departures_tool(stop_id, route_id, limit, window_minutes)
+def get_departures(stop_id: str, route_id: str | None = None, limit: int = 10,
+                   window_minutes: int = 120, mode: str | None = None,
+                   operator: str | None = None) -> dict:
+    return get_departures_tool(stop_id, route_id, limit, window_minutes, mode, operator)
 
 
 def main() -> None:
