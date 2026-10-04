@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from contextlib import closing
+import json
 from datetime import date, datetime, time, timedelta, timezone
 from typing import Any
 from zoneinfo import ZoneInfo
@@ -64,7 +65,7 @@ def _realtime_state(connection, now_utc: datetime) -> tuple[dict[str, Any], int 
         return ({"state": "not_connected", "last_attempt_utc": None, "last_success_utc": None}, None)
 
     latest_success = connection.execute(
-        "SELECT snapshot_id, fetched_at_utc FROM feed_snapshots "
+        "SELECT snapshot_id, fetched_at_utc, feed_timestamp_utc, raw_feed FROM feed_snapshots "
         "WHERE fetch_status='success' ORDER BY snapshot_id DESC LIMIT 1"
     ).fetchone()
     last_success_time = None
@@ -77,22 +78,40 @@ def _realtime_state(connection, now_utc: datetime) -> tuple[dict[str, Any], int 
             last_success_time = None
 
     last_attempt = latest_attempt["fetched_at_utc"]
+    source_ages: dict[str, float] = {}
+    feed_timestamp = None
+    if latest_success:
+        feed_timestamp = latest_success['feed_timestamp_utc']
+        raw = latest_success['raw_feed']
+        try:
+            envelope = json.loads(raw) if raw and raw.lstrip().startswith(b'{') else {}
+            sources = envelope.get('poller_sources', {})
+            if sources:
+                source_ages = {name: (now_utc - datetime.fromtimestamp(item['timestamp'], timezone.utc)).total_seconds()
+                               for name, item in sources.items()}
+            elif feed_timestamp:
+                parsed_feed_time = datetime.fromisoformat(feed_timestamp)
+                if parsed_feed_time.tzinfo is None:
+                    parsed_feed_time = parsed_feed_time.replace(tzinfo=timezone.utc)
+                source_ages = {'feed': (now_utc - parsed_feed_time.astimezone(timezone.utc)).total_seconds()}
+        except (TypeError, ValueError, KeyError, json.JSONDecodeError):
+            source_ages = {}
+
     if latest_attempt["fetch_status"] != "success":
         state = "unavailable"
+    elif not source_ages:
+        state = "stale"
+    elif all(-30 <= age <= 120 for age in source_ages.values()):
+        state = "fresh"
     else:
-        try:
-            attempt_time = datetime.fromisoformat(last_attempt)
-            if attempt_time.tzinfo is None:
-                attempt_time = attempt_time.replace(tzinfo=timezone.utc)
-            age = now_utc - attempt_time.astimezone(timezone.utc)
-            state = "fresh" if age <= timedelta(seconds=120) else "stale"
-        except ValueError:
-            state = "stale"
+        state = "stale"
 
     result = {
         "state": state,
         "last_attempt_utc": last_attempt,
         "last_success_utc": _iso_utc(last_success_time) if last_success_time else None,
+        "feed_timestamp_utc": feed_timestamp,
+        "source_age_seconds": {name: round(age, 1) for name, age in source_ages.items()},
     }
     if latest_attempt["error_message"]:
         result["last_error"] = latest_attempt["error_message"]
