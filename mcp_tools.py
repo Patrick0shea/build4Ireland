@@ -293,6 +293,20 @@ def get_departures(
 
         realtime, snapshot_id = _realtime_state(connection, now_utc)
         evidence_by_trip: dict[str, Any] = {}
+        route_ids = sorted({item['route_id'] for item in candidates})
+        archive_hash = metadata.get('gtfs_archive_sha256')
+        covered_routes = set()
+        if archive_hash and route_ids:
+            placeholders = ','.join('?' for _ in route_ids)
+            covered_routes = {r['route_id'] for r in connection.execute(
+                f"SELECT route_id FROM realtime_route_coverage WHERE gtfs_archive_sha256=? AND route_id IN ({placeholders})",
+                [archive_hash, *route_ids])}
+            covered_routes.update(r['route_id'] for r in connection.execute(
+                f"SELECT DISTINCT t.route_id FROM trip_status_history h JOIN trips t USING(trip_id) "
+                f"WHERE h.status IN ('seen','cancelled') AND t.route_id IN ({placeholders})",
+                route_ids))
+        elif not archive_hash:
+            covered_routes = set(route_ids)
         if snapshot_id is not None and candidates:
             trip_ids = sorted({item["trip_id"] for item in candidates})
             for offset in range(0, len(trip_ids), 800):
@@ -319,6 +333,7 @@ def get_departures(
                 realtime_departure = (scheduled_utc + timedelta(seconds=evidence["delay_seconds"])).astimezone(DUBLIN_TZ).isoformat(timespec="seconds")
         item.update({
             "status": status,
+            "realtime_coverage": "observed" if item["route_id"] in covered_routes else "no_live_data",
             "realtime_departure": realtime_departure,
             "realtime_observed_at_utc": evidence["observed_at_utc"] if evidence and status in ("live", "cancelled") else None,
             "_sort_utc": scheduled_utc,
@@ -337,6 +352,6 @@ def get_departures(
         "source": "NTA static GTFS",
         "static_feed_imported_at_utc": metadata.get("gtfs_imported_at_utc"),
         "realtime": realtime,
-        "coverage": "Bus, rail, and tram (Luas) routes in the loaded national NTA timetable. Realtime status is available only when a fresh matching feed observation exists; unsupported modes and feeds are reported as scheduled-only.",
+        "coverage": "Bus, rail, and tram (Luas) routes in the loaded national NTA timetable. Check realtime_coverage: no_live_data means the feed has never reported that route; it is not evidence of unreliability.",
         "message": None if departures else f"No scheduled departures were found within {window_minutes} minutes for this stop and filter.",
     }

@@ -91,6 +91,14 @@ CREATE TABLE IF NOT EXISTS calendar_dates (
     PRIMARY KEY (service_id, date)
 );
 
+CREATE TABLE IF NOT EXISTS realtime_route_coverage (
+    gtfs_archive_sha256 TEXT NOT NULL,
+    route_id TEXT NOT NULL,
+    first_seen_at_utc TEXT NOT NULL,
+    last_seen_at_utc TEXT NOT NULL,
+    PRIMARY KEY (gtfs_archive_sha256, route_id)
+);
+
 CREATE TABLE IF NOT EXISTS feed_snapshots (
     snapshot_id INTEGER PRIMARY KEY AUTOINCREMENT,
     fetched_at_utc TEXT NOT NULL,

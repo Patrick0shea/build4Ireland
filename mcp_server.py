@@ -38,7 +38,8 @@ def find_stops(query: str, limit: int = 8, mode: str | None = None) -> dict:
     "Get upcoming scheduled NTA bus, Irish Rail, or Luas departures for a GTFS stop ID, "
     "optionally filtered by route, mode, or exact operator name. Report each status honestly: live only when there is a "
     "fresh matching realtime observation; cancelled only on explicit cancellation; "
-    "otherwise scheduled-only. Check the returned realtime state and timetable "
+        "otherwise scheduled-only. Check realtime_coverage: no_live_data means the "
+        "feed has not reported that route and must not be called unreliable. Check the returned realtime state and timetable "
     "import timestamp before answering. A missing feed observation does not prove "
     "a bus will not run."
 ))

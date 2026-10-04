@@ -198,6 +198,31 @@ def ingest(path, payload, fetched_at, route_ids=(), max_age=120):
             VALUES (?,?,'success',?,?,?,?,?)''',
             (iso(fetched_at), iso(timestamp), len(entities), len(updates), len(vehicles),
              sum('alert' in e for e in entities), payload)).lastrowid
+        archive = con.execute("SELECT value FROM schema_metadata WHERE key='gtfs_archive_sha256'").fetchone()
+        reported_trip_ids = set()
+        for entity in updates:
+            update = entity['trip_update']
+            trip = update.get('trip', {})
+            observed = int(update.get('timestamp', timestamp))
+            relationship = trip.get('schedule_relationship', 'SCHEDULED')
+            if (trip.get('trip_id') and 0 <= timestamp - observed <= max_age
+                    and relationship in ('SCHEDULED', 'CANCELED', 0, 3)):
+                reported_trip_ids.add(trip['trip_id'])
+        for entity in vehicles:
+            vehicle = entity['vehicle']
+            trip_id = vehicle.get('trip', {}).get('trip_id')
+            observed = int(vehicle.get('timestamp', timestamp))
+            if trip_id and 0 <= timestamp - observed <= max_age:
+                reported_trip_ids.add(trip_id)
+        if archive and archive[0] and reported_trip_ids:
+            for row in con.execute(
+                "SELECT DISTINCT route_id FROM trips WHERE trip_id IN (SELECT value FROM json_each(?))",
+                (json.dumps(sorted(reported_trip_ids)),),
+            ):
+                con.execute('''INSERT INTO realtime_route_coverage VALUES (?,?,?,?)
+                    ON CONFLICT(gtfs_archive_sha256,route_id) DO UPDATE SET
+                    last_seen_at_utc=excluded.last_seen_at_utc''',
+                    (archive[0], row['route_id'], iso(timestamp), iso(timestamp)))
         evidence = {}
         active = scheduled_trips(con, timestamp, route_ids)
         for entity in updates:
@@ -247,12 +272,25 @@ def ingest(path, payload, fetched_at, route_ids=(), max_age=120):
 def suspected_missing(path, trip_id):
     """Five immediately consecutive fresh successful polls in the same service instance."""
     with closing(db.connect(path)) as con:
+        archive = con.execute("SELECT value FROM schema_metadata WHERE key='gtfs_archive_sha256'").fetchone()
+        if archive and archive[0]:
+            coverage = con.execute(
+                "SELECT first_seen_at_utc FROM realtime_route_coverage WHERE gtfs_archive_sha256=? "
+                "AND route_id=(SELECT route_id FROM trips WHERE trip_id=?)", (archive[0], trip_id)
+            ).fetchone()
+            if coverage is None:
+                return False
+            first_seen = datetime.fromisoformat(coverage[0]).timestamp()
+        else:
+            first_seen = None
         rows = con.execute('''SELECT f.*,h.status FROM feed_snapshots f
             LEFT JOIN trip_status_history h ON h.snapshot_id=f.snapshot_id AND h.trip_id=?
             ORDER BY f.snapshot_id DESC LIMIT 5''', (trip_id,)).fetchall()
         if len(rows) != 5 or any(r['fetch_status'] != 'success' or r['status'] != 'missing' for r in rows):
             return False
         times = [datetime.fromisoformat(r['feed_timestamp_utc']).timestamp() for r in rows]
+        if first_seen is not None and any(value < first_seen for value in times):
+            return False
         if any(a - b > 180 for a, b in zip(times, times[1:])):
             return False
         latest = times[0]
