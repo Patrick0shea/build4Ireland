@@ -87,23 +87,41 @@ def scheduled_trips(connection, timestamp, route_ids=()):
     result = {}
     ambiguous = set()
     route_ids = tuple(dict.fromkeys(route_ids))
-    route_filter = ''
-    parameters = ()
+    calendars = {r['service_id']: dict(r) for r in connection.execute('SELECT * FROM calendar')}
+    for cal in calendars.values():
+        cal['start_date'] = cal['start_date'].replace('-', '')
+        cal['end_date'] = cal['end_date'].replace('-', '')
+    exceptions = {(r['service_id'], r['date'].replace('-', '')): r['exception_type']
+                  for r in connection.execute('SELECT * FROM calendar_dates')}
+    # Filter active service IDs before joining the large stop_times table.
+    maximum = connection.execute('SELECT MAX(MAX(COALESCE(arrival_secs,0),COALESCE(departure_secs,0))) FROM stop_times').fetchone()[0] or 0
+    zones = {r[0] or 'Europe/Dublin' for r in connection.execute('SELECT DISTINCT agency_timezone FROM agencies')} or {'Europe/Dublin'}
+    active_services = set()
+    weekdays = ('monday','tuesday','wednesday','thursday','friday','saturday','sunday')
+    for name in zones:
+        today = datetime.fromtimestamp(timestamp, ZoneInfo(name)).date()
+        for offset in range(maximum // 86400 + 2):
+            day = today - timedelta(days=offset)
+            date = day.strftime('%Y%m%d')
+            for service_id, cal in calendars.items():
+                if (cal['start_date'] <= date <= cal['end_date'] and cal[weekdays[day.weekday()]]
+                        and exceptions.get((service_id,date)) != 2):
+                    active_services.add(service_id)
+            active_services.update(service_id for (service_id, exception_date), kind in exceptions.items()
+                                   if exception_date == date and kind == 1)
+    if not active_services:
+        return {}
+    conditions = "t.service_id IN (SELECT value FROM json_each(?))"
+    parameters = [json.dumps(sorted(active_services))]
     if route_ids:
-        route_filter = 'WHERE t.route_id IN (' + ','.join('?' for _ in route_ids) + ')'
-        parameters = route_ids
-    rows = connection.execute('''
-        SELECT t.trip_id,t.service_id,t.route_id,a.agency_timezone,
+        conditions += " AND t.route_id IN (SELECT value FROM json_each(?))"
+        parameters.append(json.dumps(route_ids))
+    rows = connection.execute(f'''SELECT t.trip_id,t.service_id,t.route_id,a.agency_timezone,
                MIN(COALESCE(s.departure_secs,s.arrival_secs)) AS first,
                MAX(COALESCE(s.arrival_secs,s.departure_secs)) AS last
         FROM trips t JOIN routes r USING(route_id)
         LEFT JOIN agencies a USING(agency_id) JOIN stop_times s USING(trip_id)
-        ''' + route_filter + '''
-        GROUP BY t.trip_id
-    ''', parameters).fetchall()
-    calendars = {r['service_id']: r for r in connection.execute('SELECT * FROM calendar')}
-    exceptions = {(r['service_id'], r['date']): r['exception_type']
-                  for r in connection.execute('SELECT * FROM calendar_dates')}
+        WHERE {conditions} GROUP BY t.trip_id''', parameters).fetchall()
     weekdays = ('monday','tuesday','wednesday','thursday','friday','saturday','sunday')
     for row in rows:
         if row['first'] is None or row['last'] is None:

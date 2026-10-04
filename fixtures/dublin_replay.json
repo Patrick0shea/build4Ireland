@@ -1,0 +1,7071 @@
+{
+  "mode": "historical_replay",
+  "description": "Recorded NTA Dublin Bus sample; NOT live data. Static tables and feed reduced to selected trips.",
+  "attribution": "National Transport Authority, CC BY 4.0",
+  "source_url": "https://www.transportforireland.ie/transitData/PT_Data.html",
+  "captured_snapshot_id": 20,
+  "as_of_utc": "2026-10-04T12:26:50+00:00",
+  "tables": {
+    "trips": [
+      {
+        "trip_id": "5935_10346",
+        "route_id": "1 27 c a",
+        "service_id": "176",
+        "trip_headsign": "Clare Hall",
+        "trip_short_name": "9008",
+        "direction_id": 1,
+        "block_id": "5935_7778195_6027105",
+        "shape_id": "5935_153",
+        "wheelchair_accessible": null,
+        "bikes_allowed": null
+      },
+      {
+        "trip_id": "5935_10352",
+        "route_id": "1 27 c a",
+        "service_id": "176",
+        "trip_headsign": "Clare Hall",
+        "trip_short_name": "8106",
+        "direction_id": 1,
+        "block_id": "5935_7778195_3027013",
+        "shape_id": "5935_150",
+        "wheelchair_accessible": null,
+        "bikes_allowed": null
+      },
+      {
+        "trip_id": "5935_10360",
+        "route_id": "1 27 c a",
+        "service_id": "176",
+        "trip_headsign": "Clare Hall",
+        "trip_short_name": "8061",
+        "direction_id": 1,
+        "block_id": "5935_7778195_3027007",
+        "shape_id": "5935_153",
+        "wheelchair_accessible": null,
+        "bikes_allowed": null
+      },
+      {
+        "trip_id": "5935_10366",
+        "route_id": "1 27 c a",
+        "service_id": "176",
+        "trip_headsign": "Clare Hall",
+        "trip_short_name": "8115",
+        "direction_id": 1,
+        "block_id": "5935_7778195_3027008",
+        "shape_id": "5935_150",
+        "wheelchair_accessible": null,
+        "bikes_allowed": null
+      },
+      {
+        "trip_id": "5935_10372",
+        "route_id": "1 27 c a",
+        "service_id": "176",
+        "trip_headsign": "Clare Hall",
+        "trip_short_name": "9033",
+        "direction_id": 1,
+        "block_id": "5935_7778195_6027106",
+        "shape_id": "5935_152",
+        "wheelchair_accessible": null,
+        "bikes_allowed": null
+      }
+    ],
+    "stop_times": [
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 1,
+        "stop_id": "8230DB002353",
+        "arrival_secs": 43200,
+        "departure_secs": 43200,
+        "stop_headsign": "Clare Hall",
+        "pickup_type": 0,
+        "drop_off_type": 1,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 2,
+        "stop_id": "8230DB004643",
+        "arrival_secs": 43266,
+        "departure_secs": 43266,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 3,
+        "stop_id": "8230DB004644",
+        "arrival_secs": 43346,
+        "departure_secs": 43346,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 4,
+        "stop_id": "8230DB004645",
+        "arrival_secs": 43397,
+        "departure_secs": 43397,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 5,
+        "stop_id": "8230DB004440",
+        "arrival_secs": 43450,
+        "departure_secs": 43450,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 6,
+        "stop_id": "8230DB002628",
+        "arrival_secs": 43517,
+        "departure_secs": 43517,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 7,
+        "stop_id": "8230DB002629",
+        "arrival_secs": 43609,
+        "departure_secs": 43609,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 8,
+        "stop_id": "8230DB006095",
+        "arrival_secs": 43653,
+        "departure_secs": 43653,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 9,
+        "stop_id": "8230DB007062",
+        "arrival_secs": 43710,
+        "departure_secs": 43710,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 10,
+        "stop_id": "8230DB006075",
+        "arrival_secs": 43758,
+        "departure_secs": 43758,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 11,
+        "stop_id": "8230DB002631",
+        "arrival_secs": 43793,
+        "departure_secs": 43793,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 12,
+        "stop_id": "8230DB002359",
+        "arrival_secs": 43875,
+        "departure_secs": 43875,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 13,
+        "stop_id": "8230DB002360",
+        "arrival_secs": 43987,
+        "departure_secs": 43987,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 14,
+        "stop_id": "8230DB004348",
+        "arrival_secs": 44115,
+        "departure_secs": 44115,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 15,
+        "stop_id": "8230DB004646",
+        "arrival_secs": 44213,
+        "departure_secs": 44213,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 16,
+        "stop_id": "8230DB004647",
+        "arrival_secs": 44259,
+        "departure_secs": 44259,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 17,
+        "stop_id": "8230DB002346",
+        "arrival_secs": 44337,
+        "departure_secs": 44337,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 18,
+        "stop_id": "8230DB004435",
+        "arrival_secs": 44439,
+        "departure_secs": 44439,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 19,
+        "stop_id": "8230DB002632",
+        "arrival_secs": 44576,
+        "departure_secs": 44576,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 20,
+        "stop_id": "8230DB002633",
+        "arrival_secs": 44715,
+        "departure_secs": 44715,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 21,
+        "stop_id": "8230DB002369",
+        "arrival_secs": 44820,
+        "departure_secs": 44820,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 22,
+        "stop_id": "8230DB002370",
+        "arrival_secs": 44869,
+        "departure_secs": 44869,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 23,
+        "stop_id": "8230DB002371",
+        "arrival_secs": 44925,
+        "departure_secs": 44925,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 24,
+        "stop_id": "8230DB002372",
+        "arrival_secs": 44985,
+        "departure_secs": 44985,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 25,
+        "stop_id": "8230DB002373",
+        "arrival_secs": 45045,
+        "departure_secs": 45045,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 26,
+        "stop_id": "8230DB002377",
+        "arrival_secs": 45150,
+        "departure_secs": 45150,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 27,
+        "stop_id": "8220DB002378",
+        "arrival_secs": 45240,
+        "departure_secs": 45240,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 28,
+        "stop_id": "8220DB002183",
+        "arrival_secs": 45347,
+        "departure_secs": 45347,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 29,
+        "stop_id": "8220DB002184",
+        "arrival_secs": 45389,
+        "departure_secs": 45389,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 30,
+        "stop_id": "8220DB002185",
+        "arrival_secs": 45435,
+        "departure_secs": 45435,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 31,
+        "stop_id": "8220DB007043",
+        "arrival_secs": 45541,
+        "departure_secs": 45541,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 32,
+        "stop_id": "8220DB001424",
+        "arrival_secs": 45570,
+        "departure_secs": 45570,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 33,
+        "stop_id": "8220DB002186",
+        "arrival_secs": 45611,
+        "departure_secs": 45611,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 34,
+        "stop_id": "8220DB002187",
+        "arrival_secs": 45660,
+        "departure_secs": 45660,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 35,
+        "stop_id": "8220DB002188",
+        "arrival_secs": 45719,
+        "departure_secs": 45719,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 36,
+        "stop_id": "8220DB002189",
+        "arrival_secs": 45758,
+        "departure_secs": 45758,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 37,
+        "stop_id": "8220DB001436",
+        "arrival_secs": 45810,
+        "departure_secs": 45810,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 38,
+        "stop_id": "8220DB003952",
+        "arrival_secs": 45852,
+        "departure_secs": 45852,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 39,
+        "stop_id": "8220DB002190",
+        "arrival_secs": 45900,
+        "departure_secs": 45900,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 40,
+        "stop_id": "8220DB004434",
+        "arrival_secs": 45990,
+        "departure_secs": 45990,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 41,
+        "stop_id": "8220DB002379",
+        "arrival_secs": 46080,
+        "departure_secs": 46080,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 42,
+        "stop_id": "8220DB002380",
+        "arrival_secs": 46140,
+        "departure_secs": 46140,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 43,
+        "stop_id": "8220DB002382",
+        "arrival_secs": 46179,
+        "departure_secs": 46179,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 44,
+        "stop_id": "8220DB005099",
+        "arrival_secs": 46235,
+        "departure_secs": 46235,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 45,
+        "stop_id": "8220DB002383",
+        "arrival_secs": 46320,
+        "departure_secs": 46320,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 46,
+        "stop_id": "8220DB002002",
+        "arrival_secs": 46530,
+        "departure_secs": 46530,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 47,
+        "stop_id": "8220DB001358",
+        "arrival_secs": 46738,
+        "departure_secs": 46738,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 48,
+        "stop_id": "8220DB000298",
+        "arrival_secs": 47100,
+        "departure_secs": 47100,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 49,
+        "stop_id": "8220DB000496",
+        "arrival_secs": 47187,
+        "departure_secs": 47187,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 50,
+        "stop_id": "8220DB000497",
+        "arrival_secs": 47231,
+        "departure_secs": 47231,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 51,
+        "stop_id": "8220DB000515",
+        "arrival_secs": 47357,
+        "departure_secs": 47357,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 52,
+        "stop_id": "8220DB000516",
+        "arrival_secs": 47415,
+        "departure_secs": 47415,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 53,
+        "stop_id": "8220DB000519",
+        "arrival_secs": 47535,
+        "departure_secs": 47535,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 54,
+        "stop_id": "8220DB000522",
+        "arrival_secs": 47612,
+        "departure_secs": 47612,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 55,
+        "stop_id": "8220DB000523",
+        "arrival_secs": 47669,
+        "departure_secs": 47669,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 56,
+        "stop_id": "8220DB000669",
+        "arrival_secs": 47753,
+        "departure_secs": 47753,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 57,
+        "stop_id": "8220DB000670",
+        "arrival_secs": 47835,
+        "departure_secs": 47835,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 58,
+        "stop_id": "8220DB000671",
+        "arrival_secs": 47875,
+        "departure_secs": 47875,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 59,
+        "stop_id": "8220DB000672",
+        "arrival_secs": 47938,
+        "departure_secs": 47938,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 60,
+        "stop_id": "8220DB004382",
+        "arrival_secs": 47970,
+        "departure_secs": 47970,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 61,
+        "stop_id": "8220DB001196",
+        "arrival_secs": 48036,
+        "departure_secs": 48036,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 62,
+        "stop_id": "8220DB001197",
+        "arrival_secs": 48075,
+        "departure_secs": 48075,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 63,
+        "stop_id": "8220DB001198",
+        "arrival_secs": 48150,
+        "departure_secs": 48150,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 64,
+        "stop_id": "8220DB001199",
+        "arrival_secs": 48197,
+        "departure_secs": 48197,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 65,
+        "stop_id": "8220DB001200",
+        "arrival_secs": 48225,
+        "departure_secs": 48225,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 66,
+        "stop_id": "8220DB004385",
+        "arrival_secs": 48267,
+        "departure_secs": 48267,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 67,
+        "stop_id": "8220DB001201",
+        "arrival_secs": 48329,
+        "departure_secs": 48329,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 68,
+        "stop_id": "8220DB004695",
+        "arrival_secs": 48390,
+        "departure_secs": 48390,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 69,
+        "stop_id": "8220DB001243",
+        "arrival_secs": 48440,
+        "departure_secs": 48440,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 70,
+        "stop_id": "8220DB004696",
+        "arrival_secs": 48484,
+        "departure_secs": 48484,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 71,
+        "stop_id": "8220DB004697",
+        "arrival_secs": 48515,
+        "departure_secs": 48515,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 72,
+        "stop_id": "8220DB001250",
+        "arrival_secs": 48570,
+        "departure_secs": 48570,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 73,
+        "stop_id": "8220DB004698",
+        "arrival_secs": 48619,
+        "departure_secs": 48619,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 74,
+        "stop_id": "8220DB004383",
+        "arrival_secs": 48655,
+        "departure_secs": 48655,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 75,
+        "stop_id": "8220DB004699",
+        "arrival_secs": 48695,
+        "departure_secs": 48695,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 76,
+        "stop_id": "8220DB004388",
+        "arrival_secs": 48750,
+        "departure_secs": 48750,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 77,
+        "stop_id": "8220DB004700",
+        "arrival_secs": 48772,
+        "departure_secs": 48772,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 78,
+        "stop_id": "8220DB001266",
+        "arrival_secs": 48810,
+        "departure_secs": 48810,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 79,
+        "stop_id": "8220DB001267",
+        "arrival_secs": 48866,
+        "departure_secs": 48866,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 80,
+        "stop_id": "8220DB001268",
+        "arrival_secs": 48900,
+        "departure_secs": 48900,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 81,
+        "stop_id": "8220DB001269",
+        "arrival_secs": 48956,
+        "departure_secs": 48956,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 82,
+        "stop_id": "8220DB001265",
+        "arrival_secs": 48991,
+        "departure_secs": 48991,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 83,
+        "stop_id": "8220DB006115",
+        "arrival_secs": 49094,
+        "departure_secs": 49094,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 84,
+        "stop_id": "8220DB004593",
+        "arrival_secs": 49204,
+        "departure_secs": 49204,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10346",
+        "stop_sequence": 85,
+        "stop_id": "8220DB004595",
+        "arrival_secs": 49320,
+        "departure_secs": 49320,
+        "stop_headsign": null,
+        "pickup_type": 1,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 1,
+        "stop_id": "8230DB002353",
+        "arrival_secs": 44100,
+        "departure_secs": 44100,
+        "stop_headsign": "Clare Hall",
+        "pickup_type": 0,
+        "drop_off_type": 1,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 2,
+        "stop_id": "8230DB004643",
+        "arrival_secs": 44166,
+        "departure_secs": 44166,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 3,
+        "stop_id": "8230DB004644",
+        "arrival_secs": 44246,
+        "departure_secs": 44246,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 4,
+        "stop_id": "8230DB004645",
+        "arrival_secs": 44297,
+        "departure_secs": 44297,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 5,
+        "stop_id": "8230DB004440",
+        "arrival_secs": 44350,
+        "departure_secs": 44350,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 6,
+        "stop_id": "8230DB002628",
+        "arrival_secs": 44417,
+        "departure_secs": 44417,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 7,
+        "stop_id": "8230DB002629",
+        "arrival_secs": 44509,
+        "departure_secs": 44509,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 8,
+        "stop_id": "8230DB006095",
+        "arrival_secs": 44553,
+        "departure_secs": 44553,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 9,
+        "stop_id": "8230DB007062",
+        "arrival_secs": 44610,
+        "departure_secs": 44610,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 10,
+        "stop_id": "8230DB006075",
+        "arrival_secs": 44658,
+        "departure_secs": 44658,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 11,
+        "stop_id": "8230DB002631",
+        "arrival_secs": 44693,
+        "departure_secs": 44693,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 12,
+        "stop_id": "8230DB002359",
+        "arrival_secs": 44775,
+        "departure_secs": 44775,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 13,
+        "stop_id": "8230DB002360",
+        "arrival_secs": 44887,
+        "departure_secs": 44887,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 14,
+        "stop_id": "8230DB004348",
+        "arrival_secs": 45015,
+        "departure_secs": 45015,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 15,
+        "stop_id": "8230DB004646",
+        "arrival_secs": 45113,
+        "departure_secs": 45113,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 16,
+        "stop_id": "8230DB004647",
+        "arrival_secs": 45159,
+        "departure_secs": 45159,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 17,
+        "stop_id": "8230DB002346",
+        "arrival_secs": 45237,
+        "departure_secs": 45237,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 18,
+        "stop_id": "8230DB004435",
+        "arrival_secs": 45339,
+        "departure_secs": 45339,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 19,
+        "stop_id": "8230DB002632",
+        "arrival_secs": 45476,
+        "departure_secs": 45476,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 20,
+        "stop_id": "8230DB002633",
+        "arrival_secs": 45615,
+        "departure_secs": 45615,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 21,
+        "stop_id": "8230DB002369",
+        "arrival_secs": 45720,
+        "departure_secs": 45720,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 22,
+        "stop_id": "8230DB002370",
+        "arrival_secs": 45769,
+        "departure_secs": 45769,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 23,
+        "stop_id": "8230DB002371",
+        "arrival_secs": 45825,
+        "departure_secs": 45825,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 24,
+        "stop_id": "8230DB002372",
+        "arrival_secs": 45885,
+        "departure_secs": 45885,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 25,
+        "stop_id": "8230DB002373",
+        "arrival_secs": 45945,
+        "departure_secs": 45945,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 26,
+        "stop_id": "8230DB002377",
+        "arrival_secs": 46050,
+        "departure_secs": 46050,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 27,
+        "stop_id": "8220DB002378",
+        "arrival_secs": 46140,
+        "departure_secs": 46140,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 28,
+        "stop_id": "8220DB002183",
+        "arrival_secs": 46247,
+        "departure_secs": 46247,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 29,
+        "stop_id": "8220DB002184",
+        "arrival_secs": 46289,
+        "departure_secs": 46289,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 30,
+        "stop_id": "8220DB002185",
+        "arrival_secs": 46335,
+        "departure_secs": 46335,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 31,
+        "stop_id": "8220DB007043",
+        "arrival_secs": 46441,
+        "departure_secs": 46441,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 32,
+        "stop_id": "8220DB001424",
+        "arrival_secs": 46470,
+        "departure_secs": 46470,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 33,
+        "stop_id": "8220DB002186",
+        "arrival_secs": 46511,
+        "departure_secs": 46511,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 34,
+        "stop_id": "8220DB002187",
+        "arrival_secs": 46560,
+        "departure_secs": 46560,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 35,
+        "stop_id": "8220DB002188",
+        "arrival_secs": 46619,
+        "departure_secs": 46619,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 36,
+        "stop_id": "8220DB002189",
+        "arrival_secs": 46658,
+        "departure_secs": 46658,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 37,
+        "stop_id": "8220DB001436",
+        "arrival_secs": 46710,
+        "departure_secs": 46710,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 38,
+        "stop_id": "8220DB003952",
+        "arrival_secs": 46752,
+        "departure_secs": 46752,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 39,
+        "stop_id": "8220DB002190",
+        "arrival_secs": 46800,
+        "departure_secs": 46800,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 40,
+        "stop_id": "8220DB004434",
+        "arrival_secs": 46890,
+        "departure_secs": 46890,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 41,
+        "stop_id": "8220DB002379",
+        "arrival_secs": 46980,
+        "departure_secs": 46980,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 42,
+        "stop_id": "8220DB002380",
+        "arrival_secs": 47040,
+        "departure_secs": 47040,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 43,
+        "stop_id": "8220DB002382",
+        "arrival_secs": 47079,
+        "departure_secs": 47079,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 44,
+        "stop_id": "8220DB005099",
+        "arrival_secs": 47135,
+        "departure_secs": 47135,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 45,
+        "stop_id": "8220DB002383",
+        "arrival_secs": 47220,
+        "departure_secs": 47220,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 46,
+        "stop_id": "8220DB002002",
+        "arrival_secs": 47430,
+        "departure_secs": 47430,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 47,
+        "stop_id": "8220DB001358",
+        "arrival_secs": 47638,
+        "departure_secs": 47638,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 48,
+        "stop_id": "8220DB000298",
+        "arrival_secs": 48000,
+        "departure_secs": 48000,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 49,
+        "stop_id": "8220DB000496",
+        "arrival_secs": 48087,
+        "departure_secs": 48087,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 50,
+        "stop_id": "8220DB000497",
+        "arrival_secs": 48131,
+        "departure_secs": 48131,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 51,
+        "stop_id": "8220DB000515",
+        "arrival_secs": 48257,
+        "departure_secs": 48257,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 52,
+        "stop_id": "8220DB000516",
+        "arrival_secs": 48315,
+        "departure_secs": 48315,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 53,
+        "stop_id": "8220DB000519",
+        "arrival_secs": 48435,
+        "departure_secs": 48435,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 54,
+        "stop_id": "8220DB000522",
+        "arrival_secs": 48512,
+        "departure_secs": 48512,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 55,
+        "stop_id": "8220DB000523",
+        "arrival_secs": 48569,
+        "departure_secs": 48569,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 56,
+        "stop_id": "8220DB000669",
+        "arrival_secs": 48653,
+        "departure_secs": 48653,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 57,
+        "stop_id": "8220DB000670",
+        "arrival_secs": 48735,
+        "departure_secs": 48735,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 58,
+        "stop_id": "8220DB000671",
+        "arrival_secs": 48775,
+        "departure_secs": 48775,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 59,
+        "stop_id": "8220DB000672",
+        "arrival_secs": 48838,
+        "departure_secs": 48838,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 60,
+        "stop_id": "8220DB004382",
+        "arrival_secs": 48870,
+        "departure_secs": 48870,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 61,
+        "stop_id": "8220DB001196",
+        "arrival_secs": 48936,
+        "departure_secs": 48936,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 62,
+        "stop_id": "8220DB001197",
+        "arrival_secs": 48975,
+        "departure_secs": 48975,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 63,
+        "stop_id": "8220DB001198",
+        "arrival_secs": 49050,
+        "departure_secs": 49050,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 64,
+        "stop_id": "8220DB001199",
+        "arrival_secs": 49097,
+        "departure_secs": 49097,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 65,
+        "stop_id": "8220DB001200",
+        "arrival_secs": 49125,
+        "departure_secs": 49125,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 66,
+        "stop_id": "8220DB004385",
+        "arrival_secs": 49167,
+        "departure_secs": 49167,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 67,
+        "stop_id": "8220DB001201",
+        "arrival_secs": 49229,
+        "departure_secs": 49229,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 68,
+        "stop_id": "8220DB004695",
+        "arrival_secs": 49290,
+        "departure_secs": 49290,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 69,
+        "stop_id": "8220DB001243",
+        "arrival_secs": 49340,
+        "departure_secs": 49340,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 70,
+        "stop_id": "8220DB004696",
+        "arrival_secs": 49384,
+        "departure_secs": 49384,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 71,
+        "stop_id": "8220DB004697",
+        "arrival_secs": 49415,
+        "departure_secs": 49415,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 72,
+        "stop_id": "8220DB001250",
+        "arrival_secs": 49470,
+        "departure_secs": 49470,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 73,
+        "stop_id": "8220DB004698",
+        "arrival_secs": 49519,
+        "departure_secs": 49519,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 74,
+        "stop_id": "8220DB004383",
+        "arrival_secs": 49555,
+        "departure_secs": 49555,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 75,
+        "stop_id": "8220DB004699",
+        "arrival_secs": 49595,
+        "departure_secs": 49595,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 76,
+        "stop_id": "8220DB004388",
+        "arrival_secs": 49650,
+        "departure_secs": 49650,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 77,
+        "stop_id": "8220DB004700",
+        "arrival_secs": 49672,
+        "departure_secs": 49672,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 78,
+        "stop_id": "8220DB001266",
+        "arrival_secs": 49710,
+        "departure_secs": 49710,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 79,
+        "stop_id": "8220DB001267",
+        "arrival_secs": 49766,
+        "departure_secs": 49766,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 80,
+        "stop_id": "8220DB001268",
+        "arrival_secs": 49800,
+        "departure_secs": 49800,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 81,
+        "stop_id": "8220DB001269",
+        "arrival_secs": 49856,
+        "departure_secs": 49856,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 82,
+        "stop_id": "8220DB001265",
+        "arrival_secs": 49891,
+        "departure_secs": 49891,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 83,
+        "stop_id": "8220DB006115",
+        "arrival_secs": 49994,
+        "departure_secs": 49994,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 84,
+        "stop_id": "8220DB004593",
+        "arrival_secs": 50104,
+        "departure_secs": 50104,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10352",
+        "stop_sequence": 85,
+        "stop_id": "8220DB004595",
+        "arrival_secs": 50220,
+        "departure_secs": 50220,
+        "stop_headsign": null,
+        "pickup_type": 1,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 1,
+        "stop_id": "8230DB002353",
+        "arrival_secs": 45000,
+        "departure_secs": 45000,
+        "stop_headsign": "Clare Hall",
+        "pickup_type": 0,
+        "drop_off_type": 1,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 2,
+        "stop_id": "8230DB004643",
+        "arrival_secs": 45066,
+        "departure_secs": 45066,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 3,
+        "stop_id": "8230DB004644",
+        "arrival_secs": 45146,
+        "departure_secs": 45146,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 4,
+        "stop_id": "8230DB004645",
+        "arrival_secs": 45197,
+        "departure_secs": 45197,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 5,
+        "stop_id": "8230DB004440",
+        "arrival_secs": 45250,
+        "departure_secs": 45250,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 6,
+        "stop_id": "8230DB002628",
+        "arrival_secs": 45317,
+        "departure_secs": 45317,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 7,
+        "stop_id": "8230DB002629",
+        "arrival_secs": 45409,
+        "departure_secs": 45409,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 8,
+        "stop_id": "8230DB006095",
+        "arrival_secs": 45453,
+        "departure_secs": 45453,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 9,
+        "stop_id": "8230DB007062",
+        "arrival_secs": 45510,
+        "departure_secs": 45510,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 10,
+        "stop_id": "8230DB006075",
+        "arrival_secs": 45558,
+        "departure_secs": 45558,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 11,
+        "stop_id": "8230DB002631",
+        "arrival_secs": 45593,
+        "departure_secs": 45593,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 12,
+        "stop_id": "8230DB002359",
+        "arrival_secs": 45675,
+        "departure_secs": 45675,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 13,
+        "stop_id": "8230DB002360",
+        "arrival_secs": 45787,
+        "departure_secs": 45787,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 14,
+        "stop_id": "8230DB004348",
+        "arrival_secs": 45915,
+        "departure_secs": 45915,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 15,
+        "stop_id": "8230DB004646",
+        "arrival_secs": 46013,
+        "departure_secs": 46013,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 16,
+        "stop_id": "8230DB004647",
+        "arrival_secs": 46059,
+        "departure_secs": 46059,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 17,
+        "stop_id": "8230DB002346",
+        "arrival_secs": 46137,
+        "departure_secs": 46137,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 18,
+        "stop_id": "8230DB004435",
+        "arrival_secs": 46239,
+        "departure_secs": 46239,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 19,
+        "stop_id": "8230DB002632",
+        "arrival_secs": 46376,
+        "departure_secs": 46376,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 20,
+        "stop_id": "8230DB002633",
+        "arrival_secs": 46515,
+        "departure_secs": 46515,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 21,
+        "stop_id": "8230DB002369",
+        "arrival_secs": 46620,
+        "departure_secs": 46620,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 22,
+        "stop_id": "8230DB002370",
+        "arrival_secs": 46669,
+        "departure_secs": 46669,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 23,
+        "stop_id": "8230DB002371",
+        "arrival_secs": 46725,
+        "departure_secs": 46725,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 24,
+        "stop_id": "8230DB002372",
+        "arrival_secs": 46785,
+        "departure_secs": 46785,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 25,
+        "stop_id": "8230DB002373",
+        "arrival_secs": 46845,
+        "departure_secs": 46845,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 26,
+        "stop_id": "8230DB002377",
+        "arrival_secs": 46950,
+        "departure_secs": 46950,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 27,
+        "stop_id": "8220DB002378",
+        "arrival_secs": 47040,
+        "departure_secs": 47040,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 28,
+        "stop_id": "8220DB002183",
+        "arrival_secs": 47147,
+        "departure_secs": 47147,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 29,
+        "stop_id": "8220DB002184",
+        "arrival_secs": 47189,
+        "departure_secs": 47189,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 30,
+        "stop_id": "8220DB002185",
+        "arrival_secs": 47235,
+        "departure_secs": 47235,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 31,
+        "stop_id": "8220DB007043",
+        "arrival_secs": 47341,
+        "departure_secs": 47341,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 32,
+        "stop_id": "8220DB001424",
+        "arrival_secs": 47370,
+        "departure_secs": 47370,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 33,
+        "stop_id": "8220DB002186",
+        "arrival_secs": 47411,
+        "departure_secs": 47411,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 34,
+        "stop_id": "8220DB002187",
+        "arrival_secs": 47460,
+        "departure_secs": 47460,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 35,
+        "stop_id": "8220DB002188",
+        "arrival_secs": 47519,
+        "departure_secs": 47519,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 36,
+        "stop_id": "8220DB002189",
+        "arrival_secs": 47558,
+        "departure_secs": 47558,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 37,
+        "stop_id": "8220DB001436",
+        "arrival_secs": 47610,
+        "departure_secs": 47610,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 38,
+        "stop_id": "8220DB003952",
+        "arrival_secs": 47652,
+        "departure_secs": 47652,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 39,
+        "stop_id": "8220DB002190",
+        "arrival_secs": 47700,
+        "departure_secs": 47700,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 40,
+        "stop_id": "8220DB004434",
+        "arrival_secs": 47790,
+        "departure_secs": 47790,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 41,
+        "stop_id": "8220DB002379",
+        "arrival_secs": 47880,
+        "departure_secs": 47880,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 42,
+        "stop_id": "8220DB002380",
+        "arrival_secs": 47940,
+        "departure_secs": 47940,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 43,
+        "stop_id": "8220DB002382",
+        "arrival_secs": 47979,
+        "departure_secs": 47979,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 44,
+        "stop_id": "8220DB005099",
+        "arrival_secs": 48035,
+        "departure_secs": 48035,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 45,
+        "stop_id": "8220DB002383",
+        "arrival_secs": 48120,
+        "departure_secs": 48120,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 46,
+        "stop_id": "8220DB002002",
+        "arrival_secs": 48330,
+        "departure_secs": 48330,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 47,
+        "stop_id": "8220DB001358",
+        "arrival_secs": 48538,
+        "departure_secs": 48538,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 48,
+        "stop_id": "8220DB000298",
+        "arrival_secs": 48900,
+        "departure_secs": 48900,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 49,
+        "stop_id": "8220DB000496",
+        "arrival_secs": 48987,
+        "departure_secs": 48987,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 50,
+        "stop_id": "8220DB000497",
+        "arrival_secs": 49031,
+        "departure_secs": 49031,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 51,
+        "stop_id": "8220DB000515",
+        "arrival_secs": 49157,
+        "departure_secs": 49157,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 52,
+        "stop_id": "8220DB000516",
+        "arrival_secs": 49215,
+        "departure_secs": 49215,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 53,
+        "stop_id": "8220DB000519",
+        "arrival_secs": 49335,
+        "departure_secs": 49335,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 54,
+        "stop_id": "8220DB000522",
+        "arrival_secs": 49412,
+        "departure_secs": 49412,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 55,
+        "stop_id": "8220DB000523",
+        "arrival_secs": 49469,
+        "departure_secs": 49469,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 56,
+        "stop_id": "8220DB000669",
+        "arrival_secs": 49553,
+        "departure_secs": 49553,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 57,
+        "stop_id": "8220DB000670",
+        "arrival_secs": 49635,
+        "departure_secs": 49635,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 58,
+        "stop_id": "8220DB000671",
+        "arrival_secs": 49675,
+        "departure_secs": 49675,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 59,
+        "stop_id": "8220DB000672",
+        "arrival_secs": 49738,
+        "departure_secs": 49738,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 60,
+        "stop_id": "8220DB004382",
+        "arrival_secs": 49770,
+        "departure_secs": 49770,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 61,
+        "stop_id": "8220DB001196",
+        "arrival_secs": 49836,
+        "departure_secs": 49836,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 62,
+        "stop_id": "8220DB001197",
+        "arrival_secs": 49875,
+        "departure_secs": 49875,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 63,
+        "stop_id": "8220DB001198",
+        "arrival_secs": 49950,
+        "departure_secs": 49950,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 64,
+        "stop_id": "8220DB001199",
+        "arrival_secs": 49997,
+        "departure_secs": 49997,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 65,
+        "stop_id": "8220DB001200",
+        "arrival_secs": 50025,
+        "departure_secs": 50025,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 66,
+        "stop_id": "8220DB004385",
+        "arrival_secs": 50067,
+        "departure_secs": 50067,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 67,
+        "stop_id": "8220DB001201",
+        "arrival_secs": 50129,
+        "departure_secs": 50129,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 68,
+        "stop_id": "8220DB004695",
+        "arrival_secs": 50190,
+        "departure_secs": 50190,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 69,
+        "stop_id": "8220DB001243",
+        "arrival_secs": 50240,
+        "departure_secs": 50240,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 70,
+        "stop_id": "8220DB004696",
+        "arrival_secs": 50284,
+        "departure_secs": 50284,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 71,
+        "stop_id": "8220DB004697",
+        "arrival_secs": 50315,
+        "departure_secs": 50315,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 72,
+        "stop_id": "8220DB001250",
+        "arrival_secs": 50370,
+        "departure_secs": 50370,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 73,
+        "stop_id": "8220DB004698",
+        "arrival_secs": 50419,
+        "departure_secs": 50419,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 74,
+        "stop_id": "8220DB004383",
+        "arrival_secs": 50455,
+        "departure_secs": 50455,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 75,
+        "stop_id": "8220DB004699",
+        "arrival_secs": 50495,
+        "departure_secs": 50495,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 76,
+        "stop_id": "8220DB004388",
+        "arrival_secs": 50550,
+        "departure_secs": 50550,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 77,
+        "stop_id": "8220DB004700",
+        "arrival_secs": 50572,
+        "departure_secs": 50572,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 78,
+        "stop_id": "8220DB001266",
+        "arrival_secs": 50610,
+        "departure_secs": 50610,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 79,
+        "stop_id": "8220DB001267",
+        "arrival_secs": 50666,
+        "departure_secs": 50666,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 80,
+        "stop_id": "8220DB001268",
+        "arrival_secs": 50700,
+        "departure_secs": 50700,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 81,
+        "stop_id": "8220DB001269",
+        "arrival_secs": 50756,
+        "departure_secs": 50756,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 82,
+        "stop_id": "8220DB001265",
+        "arrival_secs": 50791,
+        "departure_secs": 50791,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 83,
+        "stop_id": "8220DB006115",
+        "arrival_secs": 50894,
+        "departure_secs": 50894,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 84,
+        "stop_id": "8220DB004593",
+        "arrival_secs": 51004,
+        "departure_secs": 51004,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10360",
+        "stop_sequence": 85,
+        "stop_id": "8220DB004595",
+        "arrival_secs": 51120,
+        "departure_secs": 51120,
+        "stop_headsign": null,
+        "pickup_type": 1,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 1,
+        "stop_id": "8230DB002353",
+        "arrival_secs": 45900,
+        "departure_secs": 45900,
+        "stop_headsign": "Clare Hall",
+        "pickup_type": 0,
+        "drop_off_type": 1,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 2,
+        "stop_id": "8230DB004643",
+        "arrival_secs": 45966,
+        "departure_secs": 45966,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 3,
+        "stop_id": "8230DB004644",
+        "arrival_secs": 46046,
+        "departure_secs": 46046,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 4,
+        "stop_id": "8230DB004645",
+        "arrival_secs": 46097,
+        "departure_secs": 46097,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 5,
+        "stop_id": "8230DB004440",
+        "arrival_secs": 46150,
+        "departure_secs": 46150,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 6,
+        "stop_id": "8230DB002628",
+        "arrival_secs": 46217,
+        "departure_secs": 46217,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 7,
+        "stop_id": "8230DB002629",
+        "arrival_secs": 46309,
+        "departure_secs": 46309,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 8,
+        "stop_id": "8230DB006095",
+        "arrival_secs": 46353,
+        "departure_secs": 46353,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 9,
+        "stop_id": "8230DB007062",
+        "arrival_secs": 46410,
+        "departure_secs": 46410,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 10,
+        "stop_id": "8230DB006075",
+        "arrival_secs": 46458,
+        "departure_secs": 46458,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 11,
+        "stop_id": "8230DB002631",
+        "arrival_secs": 46493,
+        "departure_secs": 46493,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 12,
+        "stop_id": "8230DB002359",
+        "arrival_secs": 46575,
+        "departure_secs": 46575,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 13,
+        "stop_id": "8230DB002360",
+        "arrival_secs": 46687,
+        "departure_secs": 46687,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 14,
+        "stop_id": "8230DB004348",
+        "arrival_secs": 46815,
+        "departure_secs": 46815,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 15,
+        "stop_id": "8230DB004646",
+        "arrival_secs": 46913,
+        "departure_secs": 46913,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 16,
+        "stop_id": "8230DB004647",
+        "arrival_secs": 46959,
+        "departure_secs": 46959,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 17,
+        "stop_id": "8230DB002346",
+        "arrival_secs": 47037,
+        "departure_secs": 47037,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 18,
+        "stop_id": "8230DB004435",
+        "arrival_secs": 47139,
+        "departure_secs": 47139,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 19,
+        "stop_id": "8230DB002632",
+        "arrival_secs": 47276,
+        "departure_secs": 47276,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 20,
+        "stop_id": "8230DB002633",
+        "arrival_secs": 47415,
+        "departure_secs": 47415,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 21,
+        "stop_id": "8230DB002369",
+        "arrival_secs": 47520,
+        "departure_secs": 47520,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 22,
+        "stop_id": "8230DB002370",
+        "arrival_secs": 47569,
+        "departure_secs": 47569,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 23,
+        "stop_id": "8230DB002371",
+        "arrival_secs": 47625,
+        "departure_secs": 47625,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 24,
+        "stop_id": "8230DB002372",
+        "arrival_secs": 47685,
+        "departure_secs": 47685,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 25,
+        "stop_id": "8230DB002373",
+        "arrival_secs": 47745,
+        "departure_secs": 47745,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 26,
+        "stop_id": "8230DB002377",
+        "arrival_secs": 47850,
+        "departure_secs": 47850,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 27,
+        "stop_id": "8220DB002378",
+        "arrival_secs": 47940,
+        "departure_secs": 47940,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 28,
+        "stop_id": "8220DB002183",
+        "arrival_secs": 48047,
+        "departure_secs": 48047,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 29,
+        "stop_id": "8220DB002184",
+        "arrival_secs": 48089,
+        "departure_secs": 48089,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 30,
+        "stop_id": "8220DB002185",
+        "arrival_secs": 48135,
+        "departure_secs": 48135,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 31,
+        "stop_id": "8220DB007043",
+        "arrival_secs": 48241,
+        "departure_secs": 48241,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 32,
+        "stop_id": "8220DB001424",
+        "arrival_secs": 48270,
+        "departure_secs": 48270,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 33,
+        "stop_id": "8220DB002186",
+        "arrival_secs": 48311,
+        "departure_secs": 48311,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 34,
+        "stop_id": "8220DB002187",
+        "arrival_secs": 48360,
+        "departure_secs": 48360,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 35,
+        "stop_id": "8220DB002188",
+        "arrival_secs": 48419,
+        "departure_secs": 48419,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 36,
+        "stop_id": "8220DB002189",
+        "arrival_secs": 48458,
+        "departure_secs": 48458,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 37,
+        "stop_id": "8220DB001436",
+        "arrival_secs": 48510,
+        "departure_secs": 48510,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 38,
+        "stop_id": "8220DB003952",
+        "arrival_secs": 48552,
+        "departure_secs": 48552,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 39,
+        "stop_id": "8220DB002190",
+        "arrival_secs": 48600,
+        "departure_secs": 48600,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 40,
+        "stop_id": "8220DB004434",
+        "arrival_secs": 48690,
+        "departure_secs": 48690,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 41,
+        "stop_id": "8220DB002379",
+        "arrival_secs": 48780,
+        "departure_secs": 48780,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 42,
+        "stop_id": "8220DB002380",
+        "arrival_secs": 48840,
+        "departure_secs": 48840,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 43,
+        "stop_id": "8220DB002382",
+        "arrival_secs": 48879,
+        "departure_secs": 48879,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 44,
+        "stop_id": "8220DB005099",
+        "arrival_secs": 48935,
+        "departure_secs": 48935,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 45,
+        "stop_id": "8220DB002383",
+        "arrival_secs": 49020,
+        "departure_secs": 49020,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 46,
+        "stop_id": "8220DB002002",
+        "arrival_secs": 49230,
+        "departure_secs": 49230,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 47,
+        "stop_id": "8220DB001358",
+        "arrival_secs": 49438,
+        "departure_secs": 49438,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 48,
+        "stop_id": "8220DB000298",
+        "arrival_secs": 49800,
+        "departure_secs": 49800,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 49,
+        "stop_id": "8220DB000496",
+        "arrival_secs": 49887,
+        "departure_secs": 49887,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 50,
+        "stop_id": "8220DB000497",
+        "arrival_secs": 49931,
+        "departure_secs": 49931,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 51,
+        "stop_id": "8220DB000515",
+        "arrival_secs": 50057,
+        "departure_secs": 50057,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 52,
+        "stop_id": "8220DB000516",
+        "arrival_secs": 50115,
+        "departure_secs": 50115,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 53,
+        "stop_id": "8220DB000519",
+        "arrival_secs": 50235,
+        "departure_secs": 50235,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 54,
+        "stop_id": "8220DB000522",
+        "arrival_secs": 50312,
+        "departure_secs": 50312,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 55,
+        "stop_id": "8220DB000523",
+        "arrival_secs": 50369,
+        "departure_secs": 50369,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 56,
+        "stop_id": "8220DB000669",
+        "arrival_secs": 50453,
+        "departure_secs": 50453,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 57,
+        "stop_id": "8220DB000670",
+        "arrival_secs": 50535,
+        "departure_secs": 50535,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 58,
+        "stop_id": "8220DB000671",
+        "arrival_secs": 50575,
+        "departure_secs": 50575,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 59,
+        "stop_id": "8220DB000672",
+        "arrival_secs": 50638,
+        "departure_secs": 50638,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 60,
+        "stop_id": "8220DB004382",
+        "arrival_secs": 50670,
+        "departure_secs": 50670,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 61,
+        "stop_id": "8220DB001196",
+        "arrival_secs": 50736,
+        "departure_secs": 50736,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 62,
+        "stop_id": "8220DB001197",
+        "arrival_secs": 50775,
+        "departure_secs": 50775,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 63,
+        "stop_id": "8220DB001198",
+        "arrival_secs": 50850,
+        "departure_secs": 50850,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 64,
+        "stop_id": "8220DB001199",
+        "arrival_secs": 50897,
+        "departure_secs": 50897,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 65,
+        "stop_id": "8220DB001200",
+        "arrival_secs": 50925,
+        "departure_secs": 50925,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 66,
+        "stop_id": "8220DB004385",
+        "arrival_secs": 50967,
+        "departure_secs": 50967,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 67,
+        "stop_id": "8220DB001201",
+        "arrival_secs": 51029,
+        "departure_secs": 51029,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 68,
+        "stop_id": "8220DB004695",
+        "arrival_secs": 51090,
+        "departure_secs": 51090,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 69,
+        "stop_id": "8220DB001243",
+        "arrival_secs": 51140,
+        "departure_secs": 51140,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 70,
+        "stop_id": "8220DB004696",
+        "arrival_secs": 51184,
+        "departure_secs": 51184,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 71,
+        "stop_id": "8220DB004697",
+        "arrival_secs": 51215,
+        "departure_secs": 51215,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 72,
+        "stop_id": "8220DB001250",
+        "arrival_secs": 51270,
+        "departure_secs": 51270,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 73,
+        "stop_id": "8220DB004698",
+        "arrival_secs": 51319,
+        "departure_secs": 51319,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 74,
+        "stop_id": "8220DB004383",
+        "arrival_secs": 51355,
+        "departure_secs": 51355,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 75,
+        "stop_id": "8220DB004699",
+        "arrival_secs": 51395,
+        "departure_secs": 51395,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 76,
+        "stop_id": "8220DB004388",
+        "arrival_secs": 51450,
+        "departure_secs": 51450,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 77,
+        "stop_id": "8220DB004700",
+        "arrival_secs": 51472,
+        "departure_secs": 51472,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 78,
+        "stop_id": "8220DB001266",
+        "arrival_secs": 51510,
+        "departure_secs": 51510,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 79,
+        "stop_id": "8220DB001267",
+        "arrival_secs": 51566,
+        "departure_secs": 51566,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 80,
+        "stop_id": "8220DB001268",
+        "arrival_secs": 51600,
+        "departure_secs": 51600,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 81,
+        "stop_id": "8220DB001269",
+        "arrival_secs": 51656,
+        "departure_secs": 51656,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 82,
+        "stop_id": "8220DB001265",
+        "arrival_secs": 51691,
+        "departure_secs": 51691,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 83,
+        "stop_id": "8220DB006115",
+        "arrival_secs": 51794,
+        "departure_secs": 51794,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 84,
+        "stop_id": "8220DB004593",
+        "arrival_secs": 51904,
+        "departure_secs": 51904,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10366",
+        "stop_sequence": 85,
+        "stop_id": "8220DB004595",
+        "arrival_secs": 52020,
+        "departure_secs": 52020,
+        "stop_headsign": null,
+        "pickup_type": 1,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 1,
+        "stop_id": "8230DB002353",
+        "arrival_secs": 46800,
+        "departure_secs": 46800,
+        "stop_headsign": "Clare Hall",
+        "pickup_type": 0,
+        "drop_off_type": 1,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 2,
+        "stop_id": "8230DB004643",
+        "arrival_secs": 46866,
+        "departure_secs": 46866,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 3,
+        "stop_id": "8230DB004644",
+        "arrival_secs": 46946,
+        "departure_secs": 46946,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 4,
+        "stop_id": "8230DB004645",
+        "arrival_secs": 46997,
+        "departure_secs": 46997,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 5,
+        "stop_id": "8230DB004440",
+        "arrival_secs": 47050,
+        "departure_secs": 47050,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 6,
+        "stop_id": "8230DB002628",
+        "arrival_secs": 47117,
+        "departure_secs": 47117,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 7,
+        "stop_id": "8230DB002629",
+        "arrival_secs": 47209,
+        "departure_secs": 47209,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 8,
+        "stop_id": "8230DB006095",
+        "arrival_secs": 47253,
+        "departure_secs": 47253,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 9,
+        "stop_id": "8230DB007062",
+        "arrival_secs": 47310,
+        "departure_secs": 47310,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 10,
+        "stop_id": "8230DB006075",
+        "arrival_secs": 47358,
+        "departure_secs": 47358,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 11,
+        "stop_id": "8230DB002631",
+        "arrival_secs": 47393,
+        "departure_secs": 47393,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 12,
+        "stop_id": "8230DB002359",
+        "arrival_secs": 47475,
+        "departure_secs": 47475,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 13,
+        "stop_id": "8230DB002360",
+        "arrival_secs": 47587,
+        "departure_secs": 47587,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 14,
+        "stop_id": "8230DB004348",
+        "arrival_secs": 47715,
+        "departure_secs": 47715,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 15,
+        "stop_id": "8230DB004646",
+        "arrival_secs": 47813,
+        "departure_secs": 47813,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 16,
+        "stop_id": "8230DB004647",
+        "arrival_secs": 47859,
+        "departure_secs": 47859,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 17,
+        "stop_id": "8230DB002346",
+        "arrival_secs": 47937,
+        "departure_secs": 47937,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 18,
+        "stop_id": "8230DB004435",
+        "arrival_secs": 48039,
+        "departure_secs": 48039,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 19,
+        "stop_id": "8230DB002632",
+        "arrival_secs": 48176,
+        "departure_secs": 48176,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 20,
+        "stop_id": "8230DB002633",
+        "arrival_secs": 48315,
+        "departure_secs": 48315,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 21,
+        "stop_id": "8230DB002369",
+        "arrival_secs": 48420,
+        "departure_secs": 48420,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 22,
+        "stop_id": "8230DB002370",
+        "arrival_secs": 48469,
+        "departure_secs": 48469,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 23,
+        "stop_id": "8230DB002371",
+        "arrival_secs": 48525,
+        "departure_secs": 48525,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 24,
+        "stop_id": "8230DB002372",
+        "arrival_secs": 48585,
+        "departure_secs": 48585,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 25,
+        "stop_id": "8230DB002373",
+        "arrival_secs": 48645,
+        "departure_secs": 48645,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 26,
+        "stop_id": "8230DB002377",
+        "arrival_secs": 48750,
+        "departure_secs": 48750,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 27,
+        "stop_id": "8220DB002378",
+        "arrival_secs": 48840,
+        "departure_secs": 48840,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 28,
+        "stop_id": "8220DB002183",
+        "arrival_secs": 48947,
+        "departure_secs": 48947,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 29,
+        "stop_id": "8220DB002184",
+        "arrival_secs": 48989,
+        "departure_secs": 48989,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 30,
+        "stop_id": "8220DB002185",
+        "arrival_secs": 49035,
+        "departure_secs": 49035,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 31,
+        "stop_id": "8220DB007043",
+        "arrival_secs": 49141,
+        "departure_secs": 49141,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 32,
+        "stop_id": "8220DB001424",
+        "arrival_secs": 49170,
+        "departure_secs": 49170,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 33,
+        "stop_id": "8220DB002186",
+        "arrival_secs": 49211,
+        "departure_secs": 49211,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 34,
+        "stop_id": "8220DB002187",
+        "arrival_secs": 49260,
+        "departure_secs": 49260,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 35,
+        "stop_id": "8220DB002188",
+        "arrival_secs": 49319,
+        "departure_secs": 49319,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 36,
+        "stop_id": "8220DB002189",
+        "arrival_secs": 49358,
+        "departure_secs": 49358,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 37,
+        "stop_id": "8220DB001436",
+        "arrival_secs": 49410,
+        "departure_secs": 49410,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 38,
+        "stop_id": "8220DB003952",
+        "arrival_secs": 49452,
+        "departure_secs": 49452,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 39,
+        "stop_id": "8220DB002190",
+        "arrival_secs": 49500,
+        "departure_secs": 49500,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 40,
+        "stop_id": "8220DB004434",
+        "arrival_secs": 49590,
+        "departure_secs": 49590,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 41,
+        "stop_id": "8220DB002379",
+        "arrival_secs": 49680,
+        "departure_secs": 49680,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 42,
+        "stop_id": "8220DB002380",
+        "arrival_secs": 49740,
+        "departure_secs": 49740,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 43,
+        "stop_id": "8220DB002382",
+        "arrival_secs": 49779,
+        "departure_secs": 49779,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 44,
+        "stop_id": "8220DB005099",
+        "arrival_secs": 49835,
+        "departure_secs": 49835,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 45,
+        "stop_id": "8220DB002383",
+        "arrival_secs": 49920,
+        "departure_secs": 49920,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 46,
+        "stop_id": "8220DB002002",
+        "arrival_secs": 50130,
+        "departure_secs": 50130,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 47,
+        "stop_id": "8220DB001358",
+        "arrival_secs": 50338,
+        "departure_secs": 50338,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 48,
+        "stop_id": "8220DB000298",
+        "arrival_secs": 50700,
+        "departure_secs": 50700,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 49,
+        "stop_id": "8220DB000496",
+        "arrival_secs": 50787,
+        "departure_secs": 50787,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 50,
+        "stop_id": "8220DB000497",
+        "arrival_secs": 50831,
+        "departure_secs": 50831,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 51,
+        "stop_id": "8220DB000515",
+        "arrival_secs": 50957,
+        "departure_secs": 50957,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 52,
+        "stop_id": "8220DB000516",
+        "arrival_secs": 51015,
+        "departure_secs": 51015,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 53,
+        "stop_id": "8220DB000519",
+        "arrival_secs": 51135,
+        "departure_secs": 51135,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 54,
+        "stop_id": "8220DB000522",
+        "arrival_secs": 51212,
+        "departure_secs": 51212,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 55,
+        "stop_id": "8220DB000523",
+        "arrival_secs": 51269,
+        "departure_secs": 51269,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 56,
+        "stop_id": "8220DB000669",
+        "arrival_secs": 51353,
+        "departure_secs": 51353,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 57,
+        "stop_id": "8220DB000670",
+        "arrival_secs": 51435,
+        "departure_secs": 51435,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 58,
+        "stop_id": "8220DB000671",
+        "arrival_secs": 51475,
+        "departure_secs": 51475,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 59,
+        "stop_id": "8220DB000672",
+        "arrival_secs": 51538,
+        "departure_secs": 51538,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 60,
+        "stop_id": "8220DB004382",
+        "arrival_secs": 51570,
+        "departure_secs": 51570,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 61,
+        "stop_id": "8220DB001196",
+        "arrival_secs": 51636,
+        "departure_secs": 51636,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 62,
+        "stop_id": "8220DB001197",
+        "arrival_secs": 51675,
+        "departure_secs": 51675,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 63,
+        "stop_id": "8220DB001198",
+        "arrival_secs": 51750,
+        "departure_secs": 51750,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 64,
+        "stop_id": "8220DB001199",
+        "arrival_secs": 51797,
+        "departure_secs": 51797,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 65,
+        "stop_id": "8220DB001200",
+        "arrival_secs": 51825,
+        "departure_secs": 51825,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 66,
+        "stop_id": "8220DB004385",
+        "arrival_secs": 51867,
+        "departure_secs": 51867,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 67,
+        "stop_id": "8220DB001201",
+        "arrival_secs": 51929,
+        "departure_secs": 51929,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 68,
+        "stop_id": "8220DB004695",
+        "arrival_secs": 51990,
+        "departure_secs": 51990,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 69,
+        "stop_id": "8220DB001243",
+        "arrival_secs": 52040,
+        "departure_secs": 52040,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 70,
+        "stop_id": "8220DB004696",
+        "arrival_secs": 52084,
+        "departure_secs": 52084,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 71,
+        "stop_id": "8220DB004697",
+        "arrival_secs": 52115,
+        "departure_secs": 52115,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 72,
+        "stop_id": "8220DB001250",
+        "arrival_secs": 52170,
+        "departure_secs": 52170,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 73,
+        "stop_id": "8220DB004698",
+        "arrival_secs": 52219,
+        "departure_secs": 52219,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 74,
+        "stop_id": "8220DB004383",
+        "arrival_secs": 52255,
+        "departure_secs": 52255,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 75,
+        "stop_id": "8220DB004699",
+        "arrival_secs": 52295,
+        "departure_secs": 52295,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 76,
+        "stop_id": "8220DB004388",
+        "arrival_secs": 52350,
+        "departure_secs": 52350,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 77,
+        "stop_id": "8220DB004700",
+        "arrival_secs": 52372,
+        "departure_secs": 52372,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 78,
+        "stop_id": "8220DB001266",
+        "arrival_secs": 52410,
+        "departure_secs": 52410,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 79,
+        "stop_id": "8220DB001267",
+        "arrival_secs": 52466,
+        "departure_secs": 52466,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 80,
+        "stop_id": "8220DB001268",
+        "arrival_secs": 52500,
+        "departure_secs": 52500,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 81,
+        "stop_id": "8220DB001269",
+        "arrival_secs": 52556,
+        "departure_secs": 52556,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 82,
+        "stop_id": "8220DB001265",
+        "arrival_secs": 52591,
+        "departure_secs": 52591,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 0
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 83,
+        "stop_id": "8220DB006115",
+        "arrival_secs": 52694,
+        "departure_secs": 52694,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 84,
+        "stop_id": "8220DB004593",
+        "arrival_secs": 52804,
+        "departure_secs": 52804,
+        "stop_headsign": null,
+        "pickup_type": 0,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      },
+      {
+        "trip_id": "5935_10372",
+        "stop_sequence": 85,
+        "stop_id": "8220DB004595",
+        "arrival_secs": 52920,
+        "departure_secs": 52920,
+        "stop_headsign": null,
+        "pickup_type": 1,
+        "drop_off_type": 0,
+        "shape_dist_traveled": null,
+        "timepoint": 1
+      }
+    ],
+    "routes": [
+      {
+        "route_id": "1 27 c a",
+        "agency_id": "1",
+        "route_short_name": "27",
+        "route_long_name": "Jobstown - Clare Hall",
+        "route_desc": null,
+        "route_type": 3,
+        "route_url": null,
+        "route_color": null,
+        "route_text_color": null
+      }
+    ],
+    "agencies": [
+      {
+        "agency_id": "1",
+        "agency_name": "Bus Átha Cliath – Dublin Bus",
+        "agency_url": "https://www.dublinbus.ie/",
+        "agency_timezone": "Europe/London",
+        "agency_lang": null,
+        "agency_phone": null
+      }
+    ],
+    "stops": [
+      {
+        "stop_id": "8220DB000298",
+        "stop_code": "298",
+        "stop_name": "Eden Quay",
+        "stop_desc": null,
+        "stop_lat": 53.348201,
+        "stop_lon": -6.256392,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB000496",
+        "stop_code": "496",
+        "stop_name": "Busáras",
+        "stop_desc": null,
+        "stop_lat": 53.3494968761341,
+        "stop_lon": -6.25222357868164,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB000497",
+        "stop_code": "497",
+        "stop_name": "Connolly Stn",
+        "stop_desc": null,
+        "stop_lat": 53.350526,
+        "stop_lon": -6.250694,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB000515",
+        "stop_code": "515",
+        "stop_name": "Five Lamps",
+        "stop_desc": null,
+        "stop_lat": 53.35439,
+        "stop_lon": -6.2472,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB000516",
+        "stop_code": "516",
+        "stop_name": "Newcomen Bridge",
+        "stop_desc": null,
+        "stop_lat": 53.35621,
+        "stop_lon": -6.244942,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB000519",
+        "stop_code": "519",
+        "stop_name": "North Strand FS",
+        "stop_desc": null,
+        "stop_lat": 53.360339,
+        "stop_lon": -6.239535,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB000522",
+        "stop_code": "522",
+        "stop_name": "Fairview",
+        "stop_desc": null,
+        "stop_lat": 53.363207,
+        "stop_lon": -6.2356,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 2
+      },
+      {
+        "stop_id": "8220DB000523",
+        "stop_code": "523",
+        "stop_name": "Marino Mart",
+        "stop_desc": null,
+        "stop_lat": 53.364355,
+        "stop_lon": -6.231308,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB000669",
+        "stop_code": "669",
+        "stop_name": "Crescent Place",
+        "stop_desc": null,
+        "stop_lat": 53.366317,
+        "stop_lon": -6.228679,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB000670",
+        "stop_code": "670",
+        "stop_name": "Copeland Avenue",
+        "stop_desc": null,
+        "stop_lat": 53.368956,
+        "stop_lon": -6.22603,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB000671",
+        "stop_code": "671",
+        "stop_name": "Mt Temple School",
+        "stop_desc": null,
+        "stop_lat": 53.370717,
+        "stop_lon": -6.224153,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB000672",
+        "stop_code": "672",
+        "stop_name": "Donnycarney Rd",
+        "stop_desc": null,
+        "stop_lat": 53.37354,
+        "stop_lon": -6.22109,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001196",
+        "stop_code": "1196",
+        "stop_name": "Elm Mt Rd",
+        "stop_desc": null,
+        "stop_lat": 53.377787,
+        "stop_lon": -6.214915,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001197",
+        "stop_code": "1197",
+        "stop_name": "Artane Cottages",
+        "stop_desc": null,
+        "stop_lat": 53.379232,
+        "stop_lon": -6.211758,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001198",
+        "stop_code": "1198",
+        "stop_name": "Artane Rnbt",
+        "stop_desc": null,
+        "stop_lat": 53.382512,
+        "stop_lon": -6.206916,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001199",
+        "stop_code": "1199",
+        "stop_name": "Mask Avenue",
+        "stop_desc": null,
+        "stop_lat": 53.384985,
+        "stop_lon": -6.202768,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001200",
+        "stop_code": "1200",
+        "stop_name": "Coolock Village",
+        "stop_desc": null,
+        "stop_lat": 53.386963,
+        "stop_lon": -6.20103,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001201",
+        "stop_code": "1201",
+        "stop_name": "Dunree Pk",
+        "stop_desc": null,
+        "stop_lat": 53.39079,
+        "stop_lon": -6.196148,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001243",
+        "stop_code": "1243",
+        "stop_name": "Greencastle Ave",
+        "stop_desc": null,
+        "stop_lat": 53.3949,
+        "stop_lon": -6.199914,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001250",
+        "stop_code": "1250",
+        "stop_name": "Bunratty Road",
+        "stop_desc": null,
+        "stop_lat": 53.393739,
+        "stop_lon": -6.207556,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001265",
+        "stop_code": "1265",
+        "stop_name": "Marigold Avenue",
+        "stop_desc": null,
+        "stop_lat": 53.398221,
+        "stop_lon": -6.190705,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001266",
+        "stop_code": "1266",
+        "stop_name": "Clonshaugh Drive",
+        "stop_desc": null,
+        "stop_lat": 53.402055,
+        "stop_lon": -6.204725,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001267",
+        "stop_code": "1267",
+        "stop_name": "Ferrycarrig Pk",
+        "stop_desc": null,
+        "stop_lat": 53.400855,
+        "stop_lon": -6.200249,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001268",
+        "stop_code": "1268",
+        "stop_name": "Belcamp Avenue",
+        "stop_desc": null,
+        "stop_lat": 53.399894,
+        "stop_lon": -6.197898,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001269",
+        "stop_code": "1269",
+        "stop_name": "Marigold Road",
+        "stop_desc": null,
+        "stop_lat": 53.3984289595154,
+        "stop_lon": -6.19371931703884,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001358",
+        "stop_code": "1358",
+        "stop_name": "College Green",
+        "stop_desc": null,
+        "stop_lat": 53.344305,
+        "stop_lon": -6.262889,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001424",
+        "stop_code": "1424",
+        "stop_name": "Crumlin Hospl",
+        "stop_desc": null,
+        "stop_lat": 53.325663,
+        "stop_lon": -6.316747,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB001436",
+        "stop_code": "1436",
+        "stop_name": "Crumlin Road",
+        "stop_desc": null,
+        "stop_lat": 53.330885,
+        "stop_lon": -6.296512,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002002",
+        "stop_code": "2002",
+        "stop_name": "Lrd Edward St",
+        "stop_desc": null,
+        "stop_lat": 53.343771,
+        "stop_lon": -6.269444,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002183",
+        "stop_code": "2183",
+        "stop_name": "Walkinstown SC",
+        "stop_desc": null,
+        "stop_lat": 53.321703980838,
+        "stop_lon": -6.33054760884826,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002184",
+        "stop_code": "2184",
+        "stop_name": "Walkinstown Rd N",
+        "stop_desc": null,
+        "stop_lat": 53.322997,
+        "stop_lon": -6.329146,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002185",
+        "stop_code": "2185",
+        "stop_name": "Balfe Road",
+        "stop_desc": null,
+        "stop_lat": 53.324259,
+        "stop_lon": -6.32749,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002186",
+        "stop_code": "2186",
+        "stop_name": "Raphoe Road",
+        "stop_desc": null,
+        "stop_lat": 53.326933,
+        "stop_lon": -6.312538,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002187",
+        "stop_code": "2187",
+        "stop_name": "Iveagh Gnds",
+        "stop_desc": null,
+        "stop_lat": 53.328045,
+        "stop_lon": -6.307284,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002188",
+        "stop_code": "2188",
+        "stop_name": "Crumlin Coll",
+        "stop_desc": null,
+        "stop_lat": 53.329017,
+        "stop_lon": -6.302922,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002189",
+        "stop_code": "2189",
+        "stop_name": "Crumlin SC",
+        "stop_desc": null,
+        "stop_lat": 53.329695,
+        "stop_lon": -6.300072,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002190",
+        "stop_code": "2190",
+        "stop_name": "Dolphin House",
+        "stop_desc": null,
+        "stop_lat": 53.332771,
+        "stop_lon": -6.292608,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002378",
+        "stop_code": "2378",
+        "stop_name": "Walkinstown Rnbt",
+        "stop_desc": null,
+        "stop_lat": 53.318148,
+        "stop_lon": -6.332698,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002379",
+        "stop_code": "2379",
+        "stop_name": "Cork Street",
+        "stop_desc": null,
+        "stop_lat": 53.337833,
+        "stop_lon": -6.284642,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002380",
+        "stop_code": "2380",
+        "stop_name": "Weaver Park",
+        "stop_desc": null,
+        "stop_lat": 53.33851,
+        "stop_lon": -6.28031,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002382",
+        "stop_code": "2382",
+        "stop_name": "Newmarket",
+        "stop_desc": null,
+        "stop_lat": 53.338858,
+        "stop_lon": -6.278383,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB002383",
+        "stop_code": "2383",
+        "stop_name": "St Patricks Cathdrl",
+        "stop_desc": null,
+        "stop_lat": 53.339458,
+        "stop_lon": -6.272653,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB003952",
+        "stop_code": "3952",
+        "stop_name": "Rutland Avenue",
+        "stop_desc": null,
+        "stop_lat": 53.3316839465194,
+        "stop_lon": -6.29455799199739,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB004382",
+        "stop_code": "4382",
+        "stop_name": "Donnycarney",
+        "stop_desc": null,
+        "stop_lat": 53.374964,
+        "stop_lon": -6.219678,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB004383",
+        "stop_code": "4383",
+        "stop_name": "Coláiste Dhúlaigh",
+        "stop_desc": null,
+        "stop_lat": 53.396318,
+        "stop_lon": -6.211132,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB004385",
+        "stop_code": "4385",
+        "stop_name": "St Brendan's Church",
+        "stop_desc": null,
+        "stop_lat": 53.388531,
+        "stop_lon": -6.198965,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB004388",
+        "stop_code": "4388",
+        "stop_name": "Glin Avenue",
+        "stop_desc": null,
+        "stop_lat": 53.398731,
+        "stop_lon": -6.206008,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB004434",
+        "stop_code": "4434",
+        "stop_name": "Coombe Hospital",
+        "stop_desc": null,
+        "stop_lat": 53.335868,
+        "stop_lon": -6.289256,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB004593",
+        "stop_code": "4593",
+        "stop_name": "Temple Vw Rise",
+        "stop_desc": null,
+        "stop_lat": 53.402504,
+        "stop_lon": -6.176807,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB004595",
+        "stop_code": "4595",
+        "stop_name": "Temple Vw Ave",
+        "stop_desc": null,
+        "stop_lat": 53.40214,
+        "stop_lon": -6.172973,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB004695",
+        "stop_code": "4695",
+        "stop_name": "Greencastle Prde",
+        "stop_desc": null,
+        "stop_lat": 53.392983,
+        "stop_lon": -6.197348,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB004696",
+        "stop_code": "4696",
+        "stop_name": "Adare Road",
+        "stop_desc": null,
+        "stop_lat": 53.394308,
+        "stop_lon": -6.20233,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB004697",
+        "stop_code": "4697",
+        "stop_name": "Coolock Drive",
+        "stop_desc": null,
+        "stop_lat": 53.393089,
+        "stop_lon": -6.203794,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB004698",
+        "stop_code": "4698",
+        "stop_name": "Adare Avenue",
+        "stop_desc": null,
+        "stop_lat": 53.394943,
+        "stop_lon": -6.2111,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB004699",
+        "stop_code": "4699",
+        "stop_name": "Stardust Park",
+        "stop_desc": null,
+        "stop_lat": 53.397538,
+        "stop_lon": -6.20854,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB004700",
+        "stop_code": "4700",
+        "stop_name": "Glin Road",
+        "stop_desc": null,
+        "stop_lat": 53.400133,
+        "stop_lon": -6.205408,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB005099",
+        "stop_code": "5099",
+        "stop_name": "Saint Luke's Avenue",
+        "stop_desc": null,
+        "stop_lat": 53.338982,
+        "stop_lon": -6.27581,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 2
+      },
+      {
+        "stop_id": "8220DB006115",
+        "stop_code": "6115",
+        "stop_name": "Belcamp Lane",
+        "stop_desc": null,
+        "stop_lat": 53.400127,
+        "stop_lon": -6.184218,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8220DB007043",
+        "stop_code": "7043",
+        "stop_name": "Drimnagh Rd",
+        "stop_desc": null,
+        "stop_lat": 53.325061,
+        "stop_lon": -6.318692,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 2
+      },
+      {
+        "stop_id": "8230DB002346",
+        "stop_code": "2346",
+        "stop_name": "Belgard Rd South",
+        "stop_desc": null,
+        "stop_lat": 53.29008,
+        "stop_lon": -6.367901,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB002353",
+        "stop_code": "2353",
+        "stop_name": "Fortunestown Rd",
+        "stop_desc": null,
+        "stop_lat": 53.279151,
+        "stop_lon": -6.401759,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB002359",
+        "stop_code": "2359",
+        "stop_name": "Maplewood",
+        "stop_desc": null,
+        "stop_lat": 53.28359,
+        "stop_lon": -6.384376,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB002360",
+        "stop_code": "2360",
+        "stop_name": "Alderwood",
+        "stop_desc": null,
+        "stop_lat": 53.284695,
+        "stop_lon": -6.379685,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB002369",
+        "stop_code": "2369",
+        "stop_name": "Mayberry Road",
+        "stop_desc": null,
+        "stop_lat": 53.29853,
+        "stop_lon": -6.35423,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB002370",
+        "stop_code": "2370",
+        "stop_name": "Tymonville Dr",
+        "stop_desc": null,
+        "stop_lat": 53.300868,
+        "stop_lon": -6.353026,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB002371",
+        "stop_code": "2371",
+        "stop_name": "Temple Wds",
+        "stop_desc": null,
+        "stop_lat": 53.3033,
+        "stop_lon": -6.35147,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB002372",
+        "stop_code": "2372",
+        "stop_name": "Ol Tymon Ln",
+        "stop_desc": null,
+        "stop_lat": 53.307257,
+        "stop_lon": -6.347738,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB002373",
+        "stop_code": "2373",
+        "stop_name": "Keadeen Avenue",
+        "stop_desc": null,
+        "stop_lat": 53.310712,
+        "stop_lon": -6.344738,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 2
+      },
+      {
+        "stop_id": "8230DB002377",
+        "stop_code": "2377",
+        "stop_name": "M Keane IE",
+        "stop_desc": null,
+        "stop_lat": 53.316047,
+        "stop_lon": -6.334161,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB002628",
+        "stop_code": "2628",
+        "stop_name": "Brookfield Road",
+        "stop_desc": null,
+        "stop_lat": 53.288871,
+        "stop_lon": -6.404111,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 2
+      },
+      {
+        "stop_id": "8230DB002629",
+        "stop_code": "2629",
+        "stop_name": "Fettercairn Cr",
+        "stop_desc": null,
+        "stop_lat": 53.2882044380089,
+        "stop_lon": -6.3986311709783,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB002631",
+        "stop_code": "2631",
+        "stop_name": "Kilclare Dr",
+        "stop_desc": null,
+        "stop_lat": 53.282196,
+        "stop_lon": -6.388973,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB002632",
+        "stop_code": "2632",
+        "stop_name": "Bancroft",
+        "stop_desc": null,
+        "stop_lat": 53.289122,
+        "stop_lon": -6.357738,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB002633",
+        "stop_code": "2633",
+        "stop_name": "Airton Road",
+        "stop_desc": null,
+        "stop_lat": 53.2941,
+        "stop_lon": -6.35577,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB004348",
+        "stop_code": "4348",
+        "stop_name": "Tallaght Luas",
+        "stop_desc": null,
+        "stop_lat": 53.286672,
+        "stop_lon": -6.37505,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB004435",
+        "stop_code": "4435",
+        "stop_name": "Tallaght Village",
+        "stop_desc": null,
+        "stop_lat": 53.288843,
+        "stop_lon": -6.363568,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB004440",
+        "stop_code": "4440",
+        "stop_name": "Brookview Road",
+        "stop_desc": null,
+        "stop_lat": 53.286429,
+        "stop_lon": -6.407037,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 2
+      },
+      {
+        "stop_id": "8230DB004643",
+        "stop_code": "4643",
+        "stop_name": "Jobstown Rd",
+        "stop_desc": null,
+        "stop_lat": 53.28082,
+        "stop_lon": -6.403631,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB004644",
+        "stop_code": "4644",
+        "stop_name": "Russell Lane",
+        "stop_desc": null,
+        "stop_lat": 53.283676,
+        "stop_lon": -6.402745,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB004645",
+        "stop_code": "4645",
+        "stop_name": "Swiftbrook",
+        "stop_desc": null,
+        "stop_lat": 53.284861,
+        "stop_lon": -6.406015,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB004646",
+        "stop_code": "4646",
+        "stop_name": "Tallaght Hospl",
+        "stop_desc": null,
+        "stop_lat": 53.28944,
+        "stop_lon": -6.37427,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB004647",
+        "stop_code": "4647",
+        "stop_name": "Belgard Square N",
+        "stop_desc": null,
+        "stop_lat": 53.290058,
+        "stop_lon": -6.371532,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB006075",
+        "stop_code": "6075",
+        "stop_name": "Whitebrook",
+        "stop_desc": null,
+        "stop_lat": 53.283229,
+        "stop_lon": -6.390943,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB006095",
+        "stop_code": "6095",
+        "stop_name": "Glenshane",
+        "stop_desc": null,
+        "stop_lat": 53.2867623972427,
+        "stop_lon": -6.39633029423498,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      },
+      {
+        "stop_id": "8230DB007062",
+        "stop_code": "7062",
+        "stop_name": "Tallaght L Centre",
+        "stop_desc": null,
+        "stop_lat": 53.28481,
+        "stop_lon": -6.393494,
+        "zone_id": null,
+        "stop_url": null,
+        "location_type": null,
+        "parent_station": null,
+        "wheelchair_boarding": 1
+      }
+    ],
+    "calendar": [
+      {
+        "service_id": "176",
+        "monday": 0,
+        "tuesday": 0,
+        "wednesday": 0,
+        "thursday": 0,
+        "friday": 0,
+        "saturday": 0,
+        "sunday": 1,
+        "start_date": "2026-10-04",
+        "end_date": "2027-01-01"
+      }
+    ],
+    "calendar_dates": [
+      {
+        "service_id": "176",
+        "date": "2026-10-26",
+        "exception_type": 1
+      },
+      {
+        "service_id": "176",
+        "date": "2026-12-25",
+        "exception_type": 1
+      },
+      {
+        "service_id": "176",
+        "date": "2026-12-26",
+        "exception_type": 1
+      },
+      {
+        "service_id": "176",
+        "date": "2027-01-01",
+        "exception_type": 1
+      }
+    ]
+  },
+  "feed": {
+    "header": {
+      "gtfs_realtime_version": "2.0",
+      "timestamp": 1791116810
+    },
+    "entity": [
+      {
+        "id": "trips:T418",
+        "trip_update": {
+          "trip": {
+            "trip_id": "5935_10346",
+            "start_time": "12:00:00",
+            "start_date": "20261004",
+            "schedule_relationship": "SCHEDULED",
+            "route_id": "1 27 c a",
+            "direction_id": 1
+          },
+          "stop_time_update": [
+            {
+              "stop_sequence": 46,
+              "arrival": {
+                "time": "1791115085",
+                "uncertainty": 0
+              },
+              "departure": {
+                "delay": 235
+              },
+              "stop_id": "8220DB002002",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 47,
+              "arrival": {
+                "delay": 234
+              },
+              "departure": {
+                "delay": 234
+              },
+              "stop_id": "8220DB001358",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 48,
+              "arrival": {
+                "delay": 433
+              },
+              "departure": {
+                "delay": 433
+              },
+              "stop_id": "8220DB000298",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 50,
+              "arrival": {
+                "delay": 664
+              },
+              "departure": {
+                "delay": 664
+              },
+              "stop_id": "8220DB000497",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 51,
+              "arrival": {
+                "delay": 720
+              },
+              "departure": {
+                "delay": 720
+              },
+              "stop_id": "8220DB000515",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 52,
+              "arrival": {
+                "delay": 903
+              },
+              "departure": {
+                "delay": 903
+              },
+              "stop_id": "8220DB000516",
+              "schedule_relationship": "SCHEDULED"
+            }
+          ],
+          "vehicle": {
+            "id": "835"
+          },
+          "timestamp": "1791116753"
+        }
+      },
+      {
+        "id": "trips:T577",
+        "trip_update": {
+          "trip": {
+            "trip_id": "5935_10352",
+            "start_time": "12:15:00",
+            "start_date": "20261004",
+            "schedule_relationship": "SCHEDULED",
+            "route_id": "1 27 c a",
+            "direction_id": 1
+          },
+          "stop_time_update": [
+            {
+              "stop_sequence": 32,
+              "arrival": {
+                "time": "1791115064",
+                "uncertainty": 0
+              },
+              "departure": {
+                "delay": 214
+              },
+              "stop_id": "8220DB001424",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 33,
+              "arrival": {
+                "delay": 213
+              },
+              "departure": {
+                "delay": 213
+              },
+              "stop_id": "8220DB002186",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 37,
+              "arrival": {
+                "delay": 291
+              },
+              "departure": {
+                "delay": 291
+              },
+              "stop_id": "8220DB001436",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 43,
+              "arrival": {
+                "delay": 364
+              },
+              "departure": {
+                "delay": 364
+              },
+              "stop_id": "8220DB002382",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 46,
+              "arrival": {
+                "delay": 278
+              },
+              "departure": {
+                "delay": 278
+              },
+              "stop_id": "8220DB002002",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 47,
+              "arrival": {
+                "delay": 286
+              },
+              "departure": {
+                "delay": 286
+              },
+              "stop_id": "8220DB001358",
+              "schedule_relationship": "SCHEDULED"
+            }
+          ],
+          "vehicle": {
+            "id": "608"
+          },
+          "timestamp": "1791116753"
+        }
+      },
+      {
+        "id": "trips:T764",
+        "trip_update": {
+          "trip": {
+            "trip_id": "5935_10360",
+            "start_time": "12:30:00",
+            "start_date": "20261004",
+            "schedule_relationship": "SCHEDULED",
+            "route_id": "1 27 c a",
+            "direction_id": 1
+          },
+          "stop_time_update": [
+            {
+              "stop_sequence": 35,
+              "arrival": {
+                "time": "1791115947",
+                "uncertainty": 0
+              },
+              "departure": {
+                "delay": 88
+              },
+              "stop_id": "8220DB002188",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 36,
+              "arrival": {
+                "delay": 87
+              },
+              "departure": {
+                "delay": 87
+              },
+              "stop_id": "8220DB002189",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 37,
+              "arrival": {
+                "delay": 153
+              },
+              "departure": {
+                "delay": 153
+              },
+              "stop_id": "8220DB001436",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 42,
+              "arrival": {
+                "delay": 227
+              },
+              "departure": {
+                "delay": 227
+              },
+              "stop_id": "8220DB002380",
+              "schedule_relationship": "SCHEDULED"
+            }
+          ],
+          "vehicle": {
+            "id": "5366"
+          },
+          "timestamp": "1791116753"
+        }
+      },
+      {
+        "id": "trips:T926",
+        "trip_update": {
+          "trip": {
+            "trip_id": "5935_10366",
+            "start_time": "12:45:00",
+            "start_date": "20261004",
+            "schedule_relationship": "SCHEDULED",
+            "route_id": "1 27 c a",
+            "direction_id": 1
+          },
+          "stop_time_update": [
+            {
+              "stop_sequence": 32,
+              "arrival": {
+                "time": "1791116709",
+                "uncertainty": 0
+              },
+              "departure": {
+                "delay": 59
+              },
+              "stop_id": "8220DB001424",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 33,
+              "arrival": {
+                "delay": 58
+              },
+              "departure": {
+                "delay": 58
+              },
+              "stop_id": "8220DB002186",
+              "schedule_relationship": "SCHEDULED"
+            }
+          ],
+          "vehicle": {
+            "id": "5312"
+          },
+          "timestamp": "1791116753"
+        }
+      },
+      {
+        "id": "trips:T1105",
+        "trip_update": {
+          "trip": {
+            "trip_id": "5935_10372",
+            "start_time": "13:00:00",
+            "start_date": "20261004",
+            "schedule_relationship": "SCHEDULED",
+            "route_id": "1 27 c a",
+            "direction_id": 1
+          },
+          "stop_time_update": [
+            {
+              "stop_sequence": 21,
+              "stop_id": "8230DB002369",
+              "schedule_relationship": "SKIPPED"
+            },
+            {
+              "stop_sequence": 22,
+              "stop_id": "8230DB002370",
+              "schedule_relationship": "SKIPPED"
+            },
+            {
+              "stop_sequence": 23,
+              "stop_id": "8230DB002371",
+              "schedule_relationship": "SKIPPED"
+            },
+            {
+              "stop_sequence": 24,
+              "stop_id": "8230DB002372",
+              "schedule_relationship": "SKIPPED"
+            },
+            {
+              "stop_sequence": 25,
+              "stop_id": "8230DB002373",
+              "schedule_relationship": "SKIPPED"
+            },
+            {
+              "stop_sequence": 26,
+              "stop_id": "8230DB002377",
+              "schedule_relationship": "SKIPPED"
+            },
+            {
+              "stop_sequence": 27,
+              "departure": {
+                "delay": 0
+              },
+              "stop_id": "8220DB002378",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 29,
+              "arrival": {
+                "delay": -1
+              },
+              "departure": {
+                "delay": -1
+              },
+              "stop_id": "8220DB002184",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 30,
+              "arrival": {
+                "delay": 0
+              },
+              "departure": {
+                "delay": 0
+              },
+              "stop_id": "8220DB002185",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 33,
+              "arrival": {
+                "delay": -1
+              },
+              "departure": {
+                "delay": -1
+              },
+              "stop_id": "8220DB002186",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 34,
+              "arrival": {
+                "delay": 0
+              },
+              "departure": {
+                "delay": 0
+              },
+              "stop_id": "8220DB002187",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 36,
+              "arrival": {
+                "delay": -1
+              },
+              "departure": {
+                "delay": -1
+              },
+              "stop_id": "8220DB002189",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 37,
+              "arrival": {
+                "delay": 0
+              },
+              "departure": {
+                "delay": 0
+              },
+              "stop_id": "8220DB001436",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 47,
+              "arrival": {
+                "delay": -1
+              },
+              "departure": {
+                "delay": -1
+              },
+              "stop_id": "8220DB001358",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 48,
+              "arrival": {
+                "delay": 0
+              },
+              "departure": {
+                "delay": 0
+              },
+              "stop_id": "8220DB000298",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 50,
+              "arrival": {
+                "delay": -1
+              },
+              "departure": {
+                "delay": -1
+              },
+              "stop_id": "8220DB000497",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 51,
+              "arrival": {
+                "delay": 0
+              },
+              "departure": {
+                "delay": 0
+              },
+              "stop_id": "8220DB000515",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 56,
+              "arrival": {
+                "delay": -1
+              },
+              "departure": {
+                "delay": -1
+              },
+              "stop_id": "8220DB000669",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 57,
+              "arrival": {
+                "delay": 0
+              },
+              "departure": {
+                "delay": 0
+              },
+              "stop_id": "8220DB000670",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 58,
+              "arrival": {
+                "delay": -1
+              },
+              "departure": {
+                "delay": -1
+              },
+              "stop_id": "8220DB000671",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 59,
+              "arrival": {
+                "delay": 0
+              },
+              "departure": {
+                "delay": 0
+              },
+              "stop_id": "8220DB000672",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 61,
+              "arrival": {
+                "delay": -1
+              },
+              "departure": {
+                "delay": -1
+              },
+              "stop_id": "8220DB001196",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 62,
+              "arrival": {
+                "delay": 0
+              },
+              "departure": {
+                "delay": 0
+              },
+              "stop_id": "8220DB001197",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 64,
+              "arrival": {
+                "delay": -1
+              },
+              "departure": {
+                "delay": -1
+              },
+              "stop_id": "8220DB001199",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 65,
+              "arrival": {
+                "delay": 0
+              },
+              "departure": {
+                "delay": 0
+              },
+              "stop_id": "8220DB001200",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 66,
+              "arrival": {
+                "delay": -1
+              },
+              "departure": {
+                "delay": -1
+              },
+              "stop_id": "8220DB004385",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 68,
+              "arrival": {
+                "delay": 0
+              },
+              "departure": {
+                "delay": 0
+              },
+              "stop_id": "8220DB004695",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 69,
+              "arrival": {
+                "delay": -1
+              },
+              "departure": {
+                "delay": -1
+              },
+              "stop_id": "8220DB001243",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 70,
+              "arrival": {
+                "delay": 0
+              },
+              "departure": {
+                "delay": 0
+              },
+              "stop_id": "8220DB004696",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 79,
+              "arrival": {
+                "delay": -1
+              },
+              "departure": {
+                "delay": -1
+              },
+              "stop_id": "8220DB001267",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 83,
+              "arrival": {
+                "delay": 0
+              },
+              "departure": {
+                "delay": 0
+              },
+              "stop_id": "8220DB006115",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 84,
+              "arrival": {
+                "delay": -1
+              },
+              "departure": {
+                "delay": -1
+              },
+              "stop_id": "8220DB004593",
+              "schedule_relationship": "SCHEDULED"
+            },
+            {
+              "stop_sequence": 85,
+              "arrival": {
+                "delay": 0
+              },
+              "stop_id": "8220DB004595",
+              "schedule_relationship": "SCHEDULED"
+            }
+          ],
+          "vehicle": {
+            "id": "5335"
+          },
+          "timestamp": "1791116753"
+        }
+      },
+      {
+        "id": "vehicles:V184",
+        "vehicle": {
+          "trip": {
+            "trip_id": "5935_10352",
+            "start_time": "12:15:00",
+            "start_date": "20261004",
+            "schedule_relationship": "SCHEDULED",
+            "route_id": "1 27 c a",
+            "direction_id": 1
+          },
+          "position": {
+            "latitude": 53.3489876,
+            "longitude": -6.25463295
+          },
+          "timestamp": "1791116790",
+          "vehicle": {
+            "id": "608"
+          }
+        }
+      },
+      {
+        "id": "vehicles:V254",
+        "vehicle": {
+          "trip": {
+            "trip_id": "5935_10346",
+            "start_time": "12:00:00",
+            "start_date": "20261004",
+            "schedule_relationship": "SCHEDULED",
+            "route_id": "1 27 c a",
+            "direction_id": 1
+          },
+          "position": {
+            "latitude": 53.360321,
+            "longitude": -6.23932123
+          },
+          "timestamp": "1791116788",
+          "vehicle": {
+            "id": "835"
+          }
+        }
+      },
+      {
+        "id": "vehicles:V554",
+        "vehicle": {
+          "trip": {
+            "trip_id": "5935_10366",
+            "start_time": "12:45:00",
+            "start_date": "20261004",
+            "schedule_relationship": "SCHEDULED",
+            "route_id": "1 27 c a",
+            "direction_id": 1
+          },
+          "position": {
+            "latitude": 53.3259506,
+            "longitude": -6.31605482
+          },
+          "timestamp": "1791116793",
+          "vehicle": {
+            "id": "5312"
+          }
+        }
+      },
+      {
+        "id": "vehicles:V561",
+        "vehicle": {
+          "trip": {
+            "trip_id": "5935_10372",
+            "start_time": "13:00:00",
+            "start_date": "20261004",
+            "schedule_relationship": "SCHEDULED",
+            "route_id": "1 27 c a",
+            "direction_id": 1
+          },
+          "position": {
+            "latitude": 53.2894821,
+            "longitude": -6.35781717
+          },
+          "timestamp": "1791116523",
+          "vehicle": {
+            "id": "5335"
+          }
+        }
+      },
+      {
+        "id": "vehicles:V571",
+        "vehicle": {
+          "trip": {
+            "trip_id": "5935_10360",
+            "start_time": "12:30:00",
+            "start_date": "20261004",
+            "schedule_relationship": "SCHEDULED",
+            "route_id": "1 27 c a",
+            "direction_id": 1
+          },
+          "position": {
+            "latitude": 53.3413506,
+            "longitude": -6.27235079
+          },
+          "timestamp": "1791116802",
+          "vehicle": {
+            "id": "5366"
+          }
+        }
+      }
+    ]
+  }
+}

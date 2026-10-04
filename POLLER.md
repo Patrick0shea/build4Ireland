@@ -141,3 +141,19 @@ After changing polling code, stop the old process and restart it. On startup wit
 two feeds, the first result takes at least 61 seconds. Retry-After is honoured as
 a full delay after the failed response; request time is not subtracted from it.
 The spacing is conservative, not a verified guarantee of the account quota.
+
+## Data verification and MCP handoff
+
+After loading static data, restart the poller to pick up code changes, then run:
+
+```sh
+python3 data_health.py
+python3 data_health.py --json
+```
+
+The poller accepts both ISO calendar dates written by the loader and compact
+GTFS dates. Full-timetable status checks filter active services before joining
+stop times. See `docs/MCP_HANDOFF.md` for query contracts, replay instructions,
+known coverage limits, and verified example output. `docs/handoff_queries.sql`
+contains read-only queries. `fixtures/dublin_replay.json` is a reduced historical
+NTA sample that can be replayed into a new database with `offline_demo.py`.
