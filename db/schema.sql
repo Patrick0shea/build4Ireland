@@ -109,12 +109,14 @@ CREATE TABLE IF NOT EXISTS feed_snapshots (
 -- A consumer may flag a trip suspected missing after five consecutive misses.
 CREATE TABLE IF NOT EXISTS trip_status_history (
     snapshot_id INTEGER NOT NULL REFERENCES feed_snapshots(snapshot_id) ON DELETE CASCADE,
-    trip_id TEXT NOT NULL REFERENCES trips(trip_id),
+    -- No static GTFS foreign key: refreshes may remove old trip IDs, but their
+    -- historical observations must remain queryable.
+    trip_id TEXT NOT NULL,
     status TEXT NOT NULL CHECK (status IN ('seen', 'missing', 'cancelled')),
     observed_at_utc TEXT NOT NULL,
     delay_seconds INTEGER,
     vehicle_id TEXT,
-    stop_id TEXT REFERENCES stops(stop_id),
+    stop_id TEXT,
     stop_sequence INTEGER,
     PRIMARY KEY (snapshot_id, trip_id)
 );

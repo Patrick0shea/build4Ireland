@@ -38,7 +38,35 @@ dates and service seconds remain in the GTFS agency timezone (`Europe/Dublin` fo
 the initial demo); convert scheduled instants to UTC when comparing to feed
 timestamps.
 
-## Initialization
+## Import and refresh
+
+Import the current NTA national timetable (free download; no realtime API key
+needed):
+
+```sh
+python gtfs_loader.py
+```
+
+Use an existing ZIP or override the feed/database paths when needed:
+
+```sh
+python gtfs_loader.py --zip /path/to/GTFS_All.zip
+python gtfs_loader.py --url https://example/feed.zip --db /path/to/transport.sqlite3
+```
+
+The import is one SQLite transaction. A malformed archive or failed import rolls
+back without leaving a partially replaced timetable. It may be rerun to refresh
+the static dataset; realtime history is preserved. The archive SHA-256 and import
+time are recorded in `schema_metadata`.
+
+The official public feed is `https://www.transportforireland.ie/transitData/Data/GTFS_All.zip`.
+The NTA attributes the data under CC BY 4.0; public-facing use should credit the
+National Transport Authority and link to its [public transport data page](https://www.transportforireland.ie/transitData/PT_Data.html).
+
+## Initialization and basic query
+
+`db.initialize()` creates the database and enables WAL mode; the loader does this
+automatically. To initialize it separately:
 
 ```python
 import db
