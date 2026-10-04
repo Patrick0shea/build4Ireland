@@ -1,0 +1,2 @@
+# Only needed for protobuf responses; JSON ingestion uses the Python standard library.
+gtfs-realtime-bindings>=1.0,<2
