@@ -1,0 +1,2 @@
+fastmcp>=2.14,<4
+rapidfuzz>=3.9,<4
