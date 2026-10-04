@@ -1,22 +1,35 @@
-# Build4Ireland MCP (local NTA public transport demo)
+# Honest Live Transport Ireland
 
-This MCP server searches stops and returns timetable departures for bus, Irish Rail,
-and Luas services in the locally loaded national NTA GTFS database. Until the realtime poller is running, results
-are marked `scheduled-only` and the realtime state is `not_connected`. A timetable
-entry is not evidence that a bus is currently running.
+An AI transport assistant prototype for Ireland. It helps people explore public
+transport options using the National Transport Authority’s timetable and
+realtime data, while showing when an answer is based on a schedule, a fresh live
+observation, or incomplete data.
 
-## Start locally
+![Example transport assistant response showing scheduled bus options, stale realtime status, and missing rail coverage.](docs/images/transit-assistant-demo.png)
 
-Python 3.11 or newer is required.
+*Prototype response from testing. It flags that realtime data is stale and that
+the DART connection could not be verified. The suggested connection is
+illustrative, not a confirmed door-to-door itinerary.*
+
+## What it can do
+
+- Search stops across NTA bus, Irish Rail, and Luas timetable services.
+- Return upcoming scheduled departures, with optional mode and operator filters.
+- Include realtime evidence when a fresh feed observation matches a scheduled
+  trip; otherwise label results `scheduled-only` and report feed freshness.
+
+The current prototype focuses on finding stops and departures. It does not yet
+calculate verified multi-leg journeys or fares, and it does not include Dublin
+Bikes. Coverage depends on the data available for the requested stop and service.
+
+## Try the demo
+
+The static timetable can be loaded without an API key. Python 3.11 or newer is
+required.
 
 ```sh
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
-```
-
-If the local database has not been loaded yet, import the free static timetable:
-
-```sh
 .venv/bin/python gtfs_loader.py
 ```
 
@@ -26,33 +39,29 @@ Start the MCP server:
 .venv/bin/python mcp_server.py
 ```
 
-The streamable HTTP MCP endpoint is `http://127.0.0.1:8000/mcp`. Override the
-host, port, or path with `MCP_HOST`, `MCP_PORT`, or `MCP_PATH`. The database path
-can be changed with `TRANSPORT_DB_PATH`.
+It serves Streamable HTTP MCP at `http://127.0.0.1:8000/mcp`. To add live
+updates, configure the NTA subscription tokens and start the realtime poller as
+described in [POLLER.md](POLLER.md). The poller and MCP server use the same
+database; each process can use `TRANSPORT_DB_PATH` to select it.
 
-## Tools
+Example questions for an MCP-connected assistant:
 
-- `find_stops(query, limit=8, mode=null)`: fuzzy-searches supported NTA stops;
-  optional mode is `bus`, `rail`, or `tram` (`Luas`). Results include operators.
-- `get_departures(stop_id, route_id=null, limit=10, window_minutes=120,
-  mode=null, operator=null)`: returns upcoming national bus, rail, or tram
-  timetable entries, optionally filtered by mode/operator, with realtime status
-  and source freshness. It supports overnight GTFS service times.
+- “Find Dublin Heuston and show me the next three rail departures.”
+- “Find bus stops near Rathmines and show the serving operators.”
+- “Are these departures based on fresh realtime data or the timetable?”
 
-Example sequence: call `find_stops("Heuston", mode="rail")`, choose a returned
-`stop_id`, then pass it to `get_departures(mode="rail")`. Omit `mode` to search
-all supported modes at a stop. Other bus operators in the national timetable
-are included and may be scheduled-only when no matching realtime observation is
-available. Modes without NTA GTFS routes, such as Dublin Bikes, require a separate
-source integration.
+For a local LLM client, connect to the MCP endpoint above. ChatGPT’s web app
+needs a remote connection path for a local server; see the [Secure MCP Tunnel
+guide](https://developers.openai.com/api/docs/guides/secure-mcp-tunnels).
 
-## Connect ChatGPT
+## Data and limitations
 
-ChatGPT connects to remote MCP servers. For a local development server, follow
-OpenAI's [Secure MCP Tunnel setup](https://help.openai.com/en/articles/12584461-developer-mode-and-mcp-apps-in-chatgpt)
-to connect the local endpoint without exposing it publicly. Configure the MCP
-endpoint shown above.
+The static timetable is the national NTA GTFS feed. Realtime data comes from
+the configured NTA GTFS-Realtime endpoints and requires subscription keys.
+Realtime may be delayed, unavailable, or stale; in those cases the assistant
+should present timetable times rather than call them live predictions. A trip
+missing from a feed is not proof that it did not run.
 
-The static NTA timetable requires no API key. Run the realtime poller as a
-separate process with the two subscription tokens described in `POLLER.md`.
-Each feed is fetched once per minute using a separate NTA token.
+The NTA feed is attributed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+See [DATABASE.md](DATABASE.md) for the static feed source and refresh details,
+and [POLLER.md](POLLER.md) for realtime setup and data checks.
