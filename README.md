@@ -5,11 +5,11 @@ transport options using the National Transport Authority’s timetable and
 realtime data, while showing when an answer is based on a schedule, a fresh live
 observation, or incomplete data.
 
-![Example transport assistant response showing scheduled bus options, stale realtime status, and missing rail coverage.](docs/images/transit-assistant-demo.png)
+![Example transport assistant response for a Limerick-to-Dublin query, distinguishing a scheduled-only coach departure from the overall realtime feed status.](docs/images/transit-assistant-demo.png)
 
-*Prototype response from testing. It flags that realtime data is stale and that
-the DART connection could not be verified. The suggested connection is
-illustrative, not a confirmed door-to-door itinerary.*
+*Example response from prototype testing. The feed can be fresh overall while a
+specific departure remains scheduled-only when no matching realtime observation
+is available.*
 
 ## What it can do
 
