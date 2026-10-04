@@ -86,21 +86,26 @@ def scheduled_trips(connection, timestamp, route_ids=()):
     """Return unambiguous active trip instances, respecting calendar and >24h times."""
     result = {}
     ambiguous = set()
+    route_ids = tuple(dict.fromkeys(route_ids))
+    route_filter = ''
+    parameters = ()
+    if route_ids:
+        route_filter = 'WHERE t.route_id IN (' + ','.join('?' for _ in route_ids) + ')'
+        parameters = route_ids
     rows = connection.execute('''
         SELECT t.trip_id,t.service_id,t.route_id,a.agency_timezone,
                MIN(COALESCE(s.departure_secs,s.arrival_secs)) AS first,
                MAX(COALESCE(s.arrival_secs,s.departure_secs)) AS last
         FROM trips t JOIN routes r USING(route_id)
         LEFT JOIN agencies a USING(agency_id) JOIN stop_times s USING(trip_id)
+        ''' + route_filter + '''
         GROUP BY t.trip_id
-    ''').fetchall()
+    ''', parameters).fetchall()
     calendars = {r['service_id']: r for r in connection.execute('SELECT * FROM calendar')}
     exceptions = {(r['service_id'], r['date']): r['exception_type']
                   for r in connection.execute('SELECT * FROM calendar_dates')}
     weekdays = ('monday','tuesday','wednesday','thursday','friday','saturday','sunday')
     for row in rows:
-        if route_ids and row['route_id'] not in route_ids:
-            continue
         if row['first'] is None or row['last'] is None:
             continue
         zone = ZoneInfo(row['agency_timezone'] or 'Europe/Dublin')
