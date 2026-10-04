@@ -18,8 +18,11 @@ Set environment variables in your shell (the program does not auto-load `.env`):
 export TRANSPORT_DB_PATH="$PWD/data/transport.sqlite3"
 export NTA_REALTIME_URL='COPY_THE_FULL_FEED_URL_FROM_YOUR_NTA_PORTAL'
 export NTA_API_KEY_HEADER='x-api-key'
-read -s NTA_API_KEY
+read -s 'NTA_API_KEY?Paste the primary subscription token: '
 export NTA_API_KEY
+read -s 'NTA_VEHICLE_API_KEY?Paste the secondary subscription token: '
+export NTA_VEHICLE_API_KEY
+echo
 python3 realtime_poller.py --once
 python3 realtime_poller.py
 ```
@@ -33,9 +36,11 @@ python3 -m pip install -r requirements-poller.txt
 
 Use the full snapshot endpoint covering the operators being monitored. A
 vehicle-only or operator-limited response must not be used to judge trips outside
-that coverage. Confirm your subscription's URL and quota in the portal. The
-poller waits at least 61 seconds between requests; HTTP Retry-After can extend that delay.
-No authenticated NTA request has been verified in this checkout.
+that coverage. Confirm the subscription URLs in the portal. Use the primary
+token for trip updates and the secondary token for vehicle positions; each token
+may make one request every 60 seconds under NTA's current policy. HTTP
+Retry-After can extend the poll interval. Both feeds have been successfully
+tested in this project.
 
 Select known Dublin route IDs from the static timetable and scope the demo:
 
@@ -111,14 +116,13 @@ Tests use fresh temporary databases and injected feeds; they require no API key.
 
 Set `NTA_VEHICLE_POSITIONS_URL` to the full Vehicle Positions request URL from
 your NTA portal, then restart the existing process. Keep `NTA_REALTIME_URL`
-pointing at the trip-update feed. Both requests use the same key/header.
+pointing at the trip-update feed. Both requests use the same `x-api-key` header
+name, with a different subscription token for each feed.
 
-With this option each cycle makes two requests separated by 61 seconds, then
-waits at least another 61 seconds before starting the next cycle. Each feed is
-therefore fetched about once every two minutes, trading the original 60-second
-per-feed target for conservative shared-key request spacing. Confirm the actual
-subscription quota in the portal. The cycle stores one combined `feed_snapshots` observation using the existing
-schema. This is one logical poll attempt spanning both configured feeds. A failure
+With this option each cycle makes one request using each of the two NTA
+subscription tokens. The current [NTA fair usage policy](https://developer.nationaltransport.ie/usagepolicy) allows each token one request every 60 seconds. The poller waits at least 61 seconds after each cycle, so each feed is fetched about once per minute without exceeding that per-token interval. Set `NTA_API_KEY` to the primary token and `NTA_VEHICLE_API_KEY` to the secondary token from Profile → Subscriptions. Do not use one token for both feeds. The cycle stores one combined
+`feed_snapshots` observation using the existing schema. This is one logical poll
+attempt spanning both configured feeds. A failure
 of either request or either feed's validation records an error and writes no
 status rows or partial normalized data; it conservatively breaks the missing
 streak. Each source must advance its timestamp independently. Successful
@@ -134,13 +138,14 @@ included in its normalized entity counts.
 Do not start a second independent poller against this database for the vehicle
 feed: status classification should happen once per combined observation. Stop
 with Ctrl+C, set the new variable, then run `python3 realtime_poller.py --once`.
-Check `vehicle_position_count`, then restart continuous polling. Live access to
-the separate vehicle endpoint still requires verification with your account.
+Check `vehicle_position_count`, then restart continuous polling. Both realtime
+endpoints have already returned successful responses in the configured account.
 
-After changing polling code, stop the old process and restart it. On startup with
-two feeds, the first result takes at least 61 seconds. Retry-After is honoured as
-a full delay after the failed response; request time is not subtracted from it.
-The spacing is conservative, not a verified guarantee of the account quota.
+After changing polling code or adding the secondary token, stop the old process
+and restart it. On startup with two feeds, the requests run in sequence; the next
+cycle starts after at least 61 seconds. Retry-After is honoured as a full delay
+after the failed response. Feed timestamps can still exceed 120 seconds of age;
+MCP then returns scheduled-only results until both sources are fresh.
 
 ## Data verification and MCP handoff
 

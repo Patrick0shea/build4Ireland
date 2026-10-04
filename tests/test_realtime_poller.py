@@ -161,12 +161,12 @@ class PollerTests(unittest.TestCase):
             {'id': 'v', 'vehicle': {'trip': {'trip_id': '0001'},
              'vehicle': {'id': 'bus1'}, 'position': {'latitude': 53.3, 'longitude': -6.2}}}])}
         calls = []
-        def fetch(url, *args):
-            calls.append(url)
+        def fetch(url, key, *args):
+            calls.append((url,key))
             return payloads[url]
-        poller.poll_once(self.path, 'trips', 'secret', vehicle_url='vehicles', sleep=lambda _: None,
+        poller.poll_once(self.path, 'trips', 'secret', vehicle_url='vehicles', vehicle_key='secondary-secret',
                          fetcher=fetch, now=lambda: self.now)
-        self.assertEqual(calls, ['trips', 'vehicles'])
+        self.assertEqual(calls, [('trips','secret'), ('vehicles','secondary-secret')])
         self.assertEqual(len(self.rows('feed_snapshots')), 1)
         self.assertEqual(self.rows('feed_snapshots')[0]['fetch_status'], 'success')
         self.assertEqual(self.rows('vehicle_positions')[0]['latitude'], 53.3)
@@ -174,11 +174,11 @@ class PollerTests(unittest.TestCase):
         self.assertEqual(set(poller.source_timestamps(self.rows('feed_snapshots')[0]['raw_feed'])), {'trips', 'vehicles'})
 
     def test_vehicle_failure_never_counts_as_missing(self):
-        def fetch(url, *args):
+        def fetch(url, key, *args):
             if url == 'vehicles':
                 raise TimeoutError()
             return self.payload()
-        poller.poll_once(self.path, 'trips', 'secret', vehicle_url='vehicles', sleep=lambda _: None,
+        poller.poll_once(self.path, 'trips', 'secret', vehicle_url='vehicles', vehicle_key='secondary-secret',
                          fetcher=fetch, now=lambda: self.now)
         self.assertEqual(self.rows('feed_snapshots')[0]['fetch_status'], 'error')
         self.assertEqual(self.rows('trip_status_history'), [])
@@ -186,22 +186,28 @@ class PollerTests(unittest.TestCase):
     def test_repeated_vehicle_feed_rejected_despite_new_trip_feed(self):
         vehicle_payload = self.payload()
         for _ in range(2):
-            poller.poll_once(self.path, 'trips', 'secret', vehicle_url='vehicles', sleep=lambda _: None,
+            poller.poll_once(self.path, 'trips', 'secret', vehicle_url='vehicles', vehicle_key='secondary-secret',
                 fetcher=lambda url, *args: self.payload() if url == 'trips' else vehicle_payload,
                 now=lambda: self.now)
             self.now += 60
         self.assertEqual([r['fetch_status'] for r in self.rows('feed_snapshots')], ['success','error'])
         self.assertEqual(len(self.rows('trip_status_history')), 1)
 
-    def test_requests_are_spaced_inside_cycle(self):
-        events = []
-        def fetch(url, *args):
-            events.append(url)
+    def test_feeds_use_distinct_subscription_tokens(self):
+        calls = []
+        def fetch(url, key, *args):
+            calls.append((url,key))
             return self.payload()
-        poller.poll_once(self.path, 'trips', 'secret', vehicle_url='vehicles',
-                         fetcher=fetch, now=lambda: self.now,
-                         sleep=lambda seconds: events.append(seconds))
-        self.assertEqual(events, ['trips', 61, 'vehicles'])
+        poller.poll_once(self.path, 'trips', 'primary', vehicle_url='vehicles',
+            vehicle_key='secondary', fetcher=fetch, now=lambda:self.now)
+        self.assertEqual(calls, [('trips','primary'),('vehicles','secondary')])
+
+    def test_vehicle_feed_requires_secondary_subscription_token(self):
+        poller.poll_once(self.path, 'trips', 'primary', vehicle_url='vehicles',
+            fetcher=lambda *args:self.payload(), now=lambda:self.now)
+        self.assertEqual(self.rows('feed_snapshots')[0]['fetch_status'],'error')
+        self.assertIn('NTA_VEHICLE_API_KEY',self.rows('feed_snapshots')[0]['error_message'])
+        self.assertEqual(self.rows('trip_status_history'),[])
 
     def test_retry_after(self):
         def fetch(*args):

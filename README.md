@@ -48,5 +48,6 @@ OpenAI's [Secure MCP Tunnel setup](https://help.openai.com/en/articles/12584461-
 to connect the local endpoint without exposing it publicly. Configure the MCP
 endpoint shown above.
 
-The static NTA timetable requires no API key. The realtime poller is a separate
-process and will require NTA API credentials when it is added.
+The static NTA timetable requires no API key. Run the realtime poller as a
+separate process with the two subscription tokens described in `POLLER.md`.
+Each feed is fetched once per minute using a separate NTA token.

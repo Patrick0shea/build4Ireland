@@ -268,15 +268,15 @@ def fetch(url, key, header, timeout):
         return response.read()
 
 
-def poll_once(path, url, key, header='x-api-key', route_ids=(), fetcher=fetch, now=time.time, vehicle_url=None, sleep=time.sleep):
+def poll_once(path, url, key, header='x-api-key', route_ids=(), fetcher=fetch, now=time.time, vehicle_url=None, vehicle_key=None):
     payload = None
     attempted = now()
     try:
+        if vehicle_url and not vehicle_key:
+            raise ConfigurationError('Set NTA_VEHICLE_API_KEY to the secondary subscription token; NTA allows one request per token every 60 seconds')
         payload = fetcher(url, key, header, 30)
         if vehicle_url:
-            # Space all authenticated requests, including requests within a cycle.
-            sleep(61)
-            vehicle_payload = fetcher(vehicle_url, key, header, 30)
+            vehicle_payload = fetcher(vehicle_url, vehicle_key, header, 30)
             payload = combine_feeds(payload, vehicle_payload, now())
         return ingest(path, payload, now(), route_ids), 60
     except Exception as error:
@@ -311,13 +311,17 @@ def main():
     parser.add_argument('--route-id', action='append', default=[])
     args = parser.parse_args()
     url, key = os.environ.get('NTA_REALTIME_URL'), os.environ.get('NTA_API_KEY')
+    vehicle_url = os.environ.get('NTA_VEHICLE_POSITIONS_URL')
+    vehicle_key = os.environ.get('NTA_VEHICLE_API_KEY')
     if not url or not key:
         parser.error('Set NTA_REALTIME_URL and NTA_API_KEY in the environment')
+    if vehicle_url and not vehicle_key:
+        parser.error('Set NTA_VEHICLE_API_KEY to your secondary NTA subscription token when configuring the vehicle feed')
     path = db.initialize(args.db)
-    print('Polling started; with two feeds each cycle takes at least 61 seconds.', flush=True)
+    print('Polling started; with two subscription tokens, both feeds are fetched once per cycle.', flush=True)
     try:
         while True:
-            snapshot, retry = poll_once(path, url, key, os.environ.get('NTA_API_KEY_HEADER','x-api-key'), args.route_id, vehicle_url=os.environ.get('NTA_VEHICLE_POSITIONS_URL'))
+            snapshot, retry = poll_once(path, url, key, os.environ.get('NTA_API_KEY_HEADER','x-api-key'), args.route_id, vehicle_url=vehicle_url, vehicle_key=vehicle_key)
             with closing(db.connect(path)) as con:
                 result = con.execute('SELECT fetch_status,error_message FROM feed_snapshots WHERE snapshot_id=?', (snapshot,)).fetchone()
             print(f"Poll {snapshot}: {result['fetch_status']}" + (f" — {result['error_message']}" if result['error_message'] else ''), flush=True)
