@@ -1,6 +1,6 @@
 # Implementation guide: Honest Live Transport for Ireland
 
-Based on `PLAN.md`. This guide defines the build order, interfaces, data model, validation, and demo for a working hackathon MVP. The repository currently contains only the plan; commands below describe the implementation to build, not existing functionality.
+Based on [`PLAN.md`](PLAN.md). This guide defines the build order, interfaces, data model, validation, and demo for a working hackathon MVP. The repository currently contains only the plan; commands below describe the implementation to build, not existing functionality.
 
 ## 1. Ship this first
 

@@ -1,12 +1,12 @@
 # Realtime poller handoff
 
 `realtime_poller.py` uses the existing `db.py`, `TRANSPORT_DB_PATH`, and shared
-`DATABASE.md` schema. No schema changes were made. The loader owns static tables;
+[`DATABASE.md`](DATABASE.md) schema. No schema changes were made. The loader owns static tables;
 the poller writes only realtime tables. Run one poller process per database.
 
 ## Run
 
-Python 3.10+ is required. First populate the timetable with the teammate's loader:
+Python 3.10+ is required. First populate the timetable with the static loader:
 
 ```sh
 python3 gtfs_loader.py
@@ -158,7 +158,7 @@ python3 data_health.py --json
 
 The poller accepts both ISO calendar dates written by the loader and compact
 GTFS dates. Full-timetable status checks filter active services before joining
-stop times. See `docs/MCP_HANDOFF.md` for query contracts, replay instructions,
-known coverage limits, and verified example output. `docs/handoff_queries.sql`
+stop times. See [`MCP_HANDOFF.md`](MCP_HANDOFF.md) for query contracts, replay instructions,
+known coverage limits, and verified example output. [`handoff_queries.sql`](handoff_queries.sql)
 contains read-only queries. `fixtures/dublin_replay.json` is a reduced historical
 NTA sample that can be replayed into a new database with `offline_demo.py`.
